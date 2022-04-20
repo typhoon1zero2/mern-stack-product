@@ -8,12 +8,12 @@
   * PRODUCTS SCHEMA
   *******************************/
  const productSchema = new Schema({
-   name: String,
-   description: String,
-   image: String,
-   price: Number,
-   qty: Number,
-   isQuality: Boolean,
+        product_id:{
+            type: String,
+            unique: true,
+            trim: true,
+            required: true
+        }
  });
  /******************************
   * MAKE PRODUCTS MODEL
