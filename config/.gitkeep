@@ -1,0 +1,2 @@
+routes api 
+*Auth* const auth = require('../...config/auth')

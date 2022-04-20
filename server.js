@@ -9,10 +9,7 @@ const logger = require('morgan');
 const app = express();
 app.use(logger('dev'));
 
- /*************************************************************
-  *     there's no need to mount express.urlencoded middleware
-  *     why is that?
-  **************************************************************/
+ 
 app.use(express.json());
 
  /*************************************************************
