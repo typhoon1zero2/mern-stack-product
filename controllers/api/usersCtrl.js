@@ -1,49 +1,39 @@
-// const mongoose = require('mongoose');
-// const Schema = mongoose.Schema;
-// const bcrypt = require('bcrypt');
+const Users = require('../../models/Users');
+const bcrypt = require('bcrypt')
 
-// const SALT_ROUNDS = 6;
+module.exports = {
+  register,
+  // login,
+  // checkToken
+};
 
-// const userSchema = new Schema({
-//   name: {type: String, required: true},
-//   email: {
-//     type: String,
-//     unique: true,
-//     trim: true,
-//     lowercase: true,
-//     required: true
-//   },
-//   password: {
-//     type: String,
-//     trim: true,
-//     minLength: 3,
-//     required: true
-//   }
-// }, {
-//   timestamps: true,
-//   toJSON: {
-//     transform: function(doc, ret) {
-//       delete ret.password;
-//       return ret;
-//     }
-//   }
-// });
+async function register(req, res){
+    try {
+      const { name, email, password } = req.body;
+      const user = await Users.findOne({email})
+      if(user)return res.status(400).json({ msg: "Email already Exists!!!" });
 
-// userSchema.pre('save', async function(next) {
- // 'this' is the user doc
-//   if (!this.isModified('password')) return next();
-// update the password with the computed hash
-//   this.password = await bcrypt.hash(this.password, SALT_ROUNDS);
-//   return next();
-// });
+      if(password.length < 4 )
+        return res.status(400).json( { msg: "Password at least 4 characters"});
+      
+      // Password Encryption
+      const passwordHash = await bcrypt.hash(password, 10)
+      const newUser = new Users({
+        name, email, password: passwordHash
+    })
+    //Save mongodb
+    await newUser.save()
 
-// module.exports = mongoose.model('User', userSchema);
+    //res.json(newUser)
+    // res.json({password , passwordHash})
+    res.json( { msg: "Register Success "});
 
 
-const usersCtrl ={
-  register: (req, res) =>{
-    res.json({ msg: "Test Controller"})
+    } catch(err) {
+      return res.status(200).json( { msg: err.message })
+
+    }
   }
-}
 
-module.exports = usersCtrl
+
+
