@@ -1,52 +1,49 @@
-const User = require('../../models/Users');
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+// const mongoose = require('mongoose');
+// const Schema = mongoose.Schema;
+// const bcrypt = require('bcrypt');
 
-module.exports = {
-  create,
-  login,
-  checkToken
-};
+// const SALT_ROUNDS = 6;
 
-function checkToken(req, res) {
-  console.log('req.user', req.user);
-  res.status(200).json(req.exp);
-}
+// const userSchema = new Schema({
+//   name: {type: String, required: true},
+//   email: {
+//     type: String,
+//     unique: true,
+//     trim: true,
+//     lowercase: true,
+//     required: true
+//   },
+//   password: {
+//     type: String,
+//     trim: true,
+//     minLength: 3,
+//     required: true
+//   }
+// }, {
+//   timestamps: true,
+//   toJSON: {
+//     transform: function(doc, ret) {
+//       delete ret.password;
+//       return ret;
+//     }
+//   }
+// });
 
-async function login(req, res) {
-  try {
-    const user = await User.findOne({ email: req.body.email });
-    if (!user) throw new Error();
-    const match = await bcrypt.compare(req.body.password, user.password);
-    if (!match) throw new Error();
-    res.status(200).json( createJWT(user) );
-  } catch {
-    res.status(400).json('Bad Credentials');
+// userSchema.pre('save', async function(next) {
+ // 'this' is the user doc
+//   if (!this.isModified('password')) return next();
+// update the password with the computed hash
+//   this.password = await bcrypt.hash(this.password, SALT_ROUNDS);
+//   return next();
+// });
+
+// module.exports = mongoose.model('User', userSchema);
+
+
+const usersCtrl ={
+  register: (req, res) =>{
+    res.json({ msg: "Test Controller"})
   }
 }
 
-async function create(req, res) {
-  try {
-    const user = await User.create(req.body);
-    // token will be a string
-    const token = createJWT(user);
-    // send back the token as a string
-    // which we need to account for
-    // in the client
-    res.status(200).json(token);
-  } catch (e) {
-    res.status(400).json(e);
-  }
-}
-
-
-/*-- Helper Functions --*/
-
-function createJWT(user) {
-  return jwt.sign(
-    // data payload
-    { user },
-    process.env.SECRET,
-    { expiresIn: '24h' }
-  );
-}
+module.exports = usersCtrl
