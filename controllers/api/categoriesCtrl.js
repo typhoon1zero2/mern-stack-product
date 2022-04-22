@@ -13,9 +13,10 @@ const categoryCtrl = {
             res.json(categories)
 
         }catch (err) {
-            return res.status(200).json({ msg: err.massage })
+            return res.status(200).json({ msg: err.message })
         }
-    }
+    },
+   
 }
 
 module.exports = categoryCtrl;
