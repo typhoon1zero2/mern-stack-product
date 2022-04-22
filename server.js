@@ -12,9 +12,6 @@ app.use(logger('dev'));
 app.use(cors())
 app.use(express.json());
 
-//test router in POSTMAN
-app.use('/user', require('./routes/api/usersRoute'));
-app.use('/api', require('./routes/api/categoriesRoute'))
 
  /*************************************************************
   *     Configure both serve-favicon & static middleware
@@ -31,11 +28,12 @@ app.use('/api', require('./routes/api/categoriesRoute'))
  /*************************************************************
   *     Put API routes here, before the "catch all" route
   **************************************************************/
-//app.use('/api/usersRoute', require('./routes/api/usersRoute'));
-//  app.use('/api/categoriesRoute', require('./routes/api/categoriesRoute'))
- //app.use('/api/productsRoute', require('./routes/api/productsRoute'))
-//  app.use('/api/paymentsRoute', require('./routes/api/paymentsRoute'))
+  app.use('/user', require('./routes/api/usersRoute'));
+  app.use('/api', require('./routes/api/categoriesRoute'));
 
+
+
+ 
  /*************************************************************
   *   The following "catch all" route (note the *) is necessary
   *     to return the index.html on all non-AJAX requests
