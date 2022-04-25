@@ -3,6 +3,22 @@ const Products = require("../../models/Products");
 /****************************
  * Filter Sorting Paginating
  ***************************/
+ class APIfeatures {
+    constructor(query, queryString){
+        this.query = query;
+        this.queryString = queryString;
+    }
+    filtering(){}
+    sorting(){}
+    paginating(){}
+}
+
+
+
+/**********************************
+ * CREATE- READ - UPDATE - DELETE
+ *********************************/
+
 const productCtrl = {
   getProducts: async (req, res) => {
     try {
