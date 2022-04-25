@@ -1,28 +1,20 @@
 import React from 'react';
-import './App.css';
-import { useState } from 'react';
-import AuthPage from '../AuthPage/AuthPage';
-import { Routes, Route } from 'react-router-dom'
-import Header from  '../Headers/Header'
-import MainPages from '../MainPages/MainPages'
+import {BrowserRouter as Router} from 'react-router-dom'
+import {DataProvider} from './GlobalState'
+import Header from './components/headers/Header'
+import MainPages from './components/MainPages/Pages'
 
 
 function App() {
-  const [user, setUser ] = useState(null);
-
   return (
-    <main className="App">
-      
-      {
-        user ?
-        <Routes>
-          <Route path="/" element={<Header />}/>
-          <Route path="/products" element={<MainPages/>}/>
-        </Routes>
-        :
-        <AuthPage setUser={setUser}/>
-      }
-    </main>
+    <DataProvider>
+      <Router>
+        <div className="App">
+          <Header />
+          <MainPages />
+        </div>
+      </Router>
+    </DataProvider>
   );
 }
 
