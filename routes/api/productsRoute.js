@@ -7,8 +7,8 @@ router.route('/products')
 
 
 router.route('/products/:id')
-    .delete(productCtrl.deletedProducts)
-    .put(productCtrl.updatedProducts)
+    .delete(productCtrl.deletedProduct)
+    .put(productCtrl.updatedProduct)
 
 
 
