@@ -8,7 +8,7 @@ const productCtrl = {
     try {
       //res.json('test')
       const products = await Products.find();
-      res.json(products);
+      res.status(200).json(products);
     } catch (e) {
       res.status(400).json({ msg: e.message });
     }
@@ -40,21 +40,39 @@ const productCtrl = {
         category,
       });
       await newProduct.save();
-      res.json({ msg: "Created a product" });
+      res.status(200).json({ msg: "Created a product" });
     } catch (e) {
       res.status(400).json({ msg: e.message });
     }
   },
-  deletedProducts: async (req, res) => {
+  deletedProduct: async (req, res) => {
     try {
-    } catch (e) {
-      res.status(400).json({ msg: e.message });
+      await Products.findByIdAndDelete(req.params.id);
+      res.status(200).json({ msg: "Deleted a Product" });
+    } catch (err) {
+      return res.status(400).json({ msg: err.message });
     }
   },
-  updatedProducts: async (req, res) => {
+  updatedProduct: async (req, res) => {
     try {
-    } catch (e) {
-      res.status(400).json({ msg: e.message });
+      const { title, price, description, content, images, category } = req.body;
+      if (!images) return res.status(400).json({ msg: "No image upload" });
+
+      await Products.findOneAndUpdate(
+        { _id: req.params.id },
+        {
+          title: title.toLowerCase(),
+          price,
+          description,
+          content,
+          images,
+          category,
+        }
+      );
+
+      res.status(200).json({ msg: "Updated a Product" });
+    } catch (err) {
+      return res.status(400).json({ msg: err.message });
     }
   },
 };
