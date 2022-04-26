@@ -1,5 +1,5 @@
-import SignUpForm from "../../components/SignUpForm/SignUpForm"
-import LoginForm from "../../components/LoginForm/LoginForm"
+import SignUpForm from "../../components/MainPages/auth/SignUpForm/SignUpForm"
+import LoginForm from "../../components/MainPages/auth/LoginForm/LoginForm"
 import { useState } from "react"
 
 export default function AuthPage({setUser}){

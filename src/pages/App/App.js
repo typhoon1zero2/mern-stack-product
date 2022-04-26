@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import {BrowserRouter as Router} from 'react-router-dom'
 import {DataProvider} from '../../GlobalState'
 import Header from '../../components/Headers/header';
-import MainPages from '../../components/MainPages/Pages';
+import MainPages from '../../components/MainPages/Pages.js';
 
 export default function App() {
  
