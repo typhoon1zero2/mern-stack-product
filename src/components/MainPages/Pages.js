@@ -1,15 +1,33 @@
-import React from 'react';
-import Products from './products/products';
-import Login from './auth/LoginForm/LoginForm';
-import Signup from './auth/SignUpForm/SignUpForm';
-import Cart from './cart/cart'
+import React, { useState } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Products from "./products/products";
+import Login from "./auth/LoginForm/LoginForm";
+import Register from "./auth/SignUpForm/SignUpForm";
+import Cart from "./cart/cart";
+import NotFound from "./utilities/not-found/notFound";
+import { getUser } from "./utilities/users-service";
+
 
 function Pages() {
+  const [user, setUser] = useState(getUser());
   return (
-    <div>
-        Main Pages components
-    </div>
-  )
+    <>
+      <Routes>
+        <Route path="/" element={<Products user={user} setUser={setUser} />} />
+        <Route
+          path="/login"
+          element={<Login user={user} setUser={setUser} />}
+        />
+        <Route
+          path="/register"
+          element={<Register user={user} setUser={setUser} />}
+        />
+        <Route path="/cart" element={<Cart user={user} setUser={setUser} />} />
+
+        <Route path="*" element={<NotFound user={user} setUser={setUser} />} />
+      </Routes>
+    </>
+  );
 }
 
-export default Pages
+export default Pages;
