@@ -4,6 +4,11 @@ import Menu from "../Headers/icons/menu.svg";
 import Close from "../Headers/icons/close.svg";
 import Cart from "../Headers/icons/cart.svg";
 import { Link } from "react-router-dom";
+import { FiLogIn } from "react-icons/fi";
+import { IoMdCreate } from "react-icons/io";
+import { SiGnuprivacyguard } from "react-icons/si";
+ 
+
 
 function Header() {
   const value = useContext(GlobalState);
@@ -14,7 +19,7 @@ function Header() {
       </div>
       <div className="logo">
         <h1>
-          <Link to="/">Products Store</Link>
+          <Link to="/"><em>ty</em>phoon Store</Link>
         </h1>
       </div>
 
@@ -23,7 +28,9 @@ function Header() {
           <Link to="/">Products</Link>
         </li>
         <li>
-          <Link to="/login">Login ⭐ Register</Link>
+          <Link to="/login"> <FiLogIn style={{ marginRight: "5px" }} />
+          Login  <IoMdCreate style={{ marginRight: "5px" }} />
+          Signup</Link>
         </li>
         <li>
           <img src={Close} alt="" width="30" className="menu" />

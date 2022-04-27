@@ -87,7 +87,6 @@ const productCtrl = {
         images,
         category,
       } = req.body;
-      if (!images) return res.status(200).json({ msg: "No image upload" });
 
       const product = await Products.findOne({ product_id });
       if (product)
@@ -119,7 +118,6 @@ const productCtrl = {
   updatedProduct: async (req, res) => {
     try {
       const { title, price, description, content, images, category } = req.body;
-      if (!images) return res.status(400).json({ msg: "No image upload" });
 
       await Products.findOneAndUpdate(
         { _id: req.params.id },

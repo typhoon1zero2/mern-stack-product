@@ -34,5 +34,26 @@ code {
     cursor: pointer;
   }
 
+  /* -----------------Import CSS Style -------------------*/
+
   /* ---------------- Header ------------ */
 @import url("./components/Headers/header.module.css");
+
+/* ------------- Products -------------- */
+@import url("./components/MainPages/products/products.module.css");
+
+/* ---------------- Detail Product --------------- */
+@import url("./components/MainPages/detailProduct/detailProduct.module.css");
+
+/* ------------- Login/Register ----------------- */
+@import url("./components/MainPages/auth/LoginForm/login.module.css");
+
+/* ------------- Footer ----------------- */
+@import url("./components/Footer/footer.module.css");
+
+/* ------------- Carousel ----------------- */
+@import url("./components//ProductCarousel//productCarousel.module.css");
+
+
+
+

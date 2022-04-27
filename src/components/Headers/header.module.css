@@ -1,4 +1,6 @@
+
 header{
+ 
     min-height: 70px;
     width: 100%;
     overflow: hidden;
@@ -6,17 +8,18 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgb(129, 13, 13);
+    
 }
 
-header .logo{
+/* header .logo{
     flex: 1;
-}
+} */
 
-header a{
+/* header a{
     text-transform: uppercase;
     color: #555;
-}
+} */
 
 header ul li{
     display:inline-block;

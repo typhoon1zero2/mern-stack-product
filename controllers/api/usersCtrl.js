@@ -1,65 +1,52 @@
-require('dotenv').config();
-const Users = require("../../models/Users");
-const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+const User = require('../../models/Users');
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
 
 module.exports = {
-  checkToken,
-  register,
+  create,
   login,
+  checkToken
 };
+
 function checkToken(req, res) {
-  console.log("req.user", req.user);
+  console.log('req.user', req.user);
   res.status(200).json(req.exp);
 }
 
-/*********************************
- * register function
- ***********************************/
-async function register(req, res) {
-  try {
-    const { name, email, password } = req.body;
-    const user = await Users.findOne({ email });
-    if (user) return res.status(200).json({ msg: "Email already Exists!!!" });
-
-    if (password.length < 4)
-      return res.status(400).json({ msg: "Password at least 4 characters" });
-
-    // Password Encryption
-    const passwordHash = await bcrypt.hash(password, 10);
-    const newUser = new Users({
-      name,
-      email,
-      password: passwordHash,
-    });
-    //Save mongodb
-    await newUser.save();
-
-  } catch (err) {
-    return res.status(200).json({ msg: err.message });
-  }
-}
-/*****************************************
- * Login function
- ****************************************/
 async function login(req, res) {
   try {
-    const { email, password } = req.body;
-
-    const user = await Users.findOne({ email });
-    if (!user) return res.status(400).json({ msg: "User does not Exist!!" });
-    delete user.password
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch)
-      return res.status(400).json({ msg: "Incorrect Password!!!!." });
-    const payload  =  {...user}
-    const token = jwt.sign(payload, process.env.SECRET)
-    res.status(200).json({ token : token })
-  } catch (err) {
-    return res.status(400).json({ msg: err.message });
+    const user = await User.findOne({ email: req.body.email });
+    if (!user) throw new Error();
+    const match = await bcrypt.compare(req.body.password, user.password);
+    if (!match) throw new Error();
+    res.status(200).json( createJWT(user) );
+  } catch {
+    res.status(400).json('Bad Credentials');
   }
 }
 
-/*********************************************
- * Logout function
- ********************************************/
+async function create(req, res) {
+  try {
+    const user = await User.create(req.body);
+    // token will be a string
+    const token = createJWT(user);
+    // send back the token as a string
+    // which we need to account for
+    // in the client
+    res.status(200).json(token);
+  } catch (e) {
+    res.status(400).json(e);
+  }
+}
+
+
+/*-- Helper Functions --*/
+
+function createJWT(user) {
+  return jwt.sign(
+    // data payload
+    { user },
+    process.env.SECRET,
+    { expiresIn: '24h' }
+  );
+}
