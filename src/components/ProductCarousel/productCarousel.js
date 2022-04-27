@@ -17,7 +17,7 @@ export default function productCarousel() {
             transitionTime={500}
             //axis="vertical"
             //selectedItem={1}
-            width="700px"
+            //width="700px"
           >
                <div className="slide-holder">
               <img

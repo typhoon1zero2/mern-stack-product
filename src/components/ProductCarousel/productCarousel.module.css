@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  
 }
 
 .carousel.carousel-slider {
@@ -9,7 +10,8 @@ body {
 
 .carousel .slide {
   color: rgb(20, 18, 18);
-  background: rgb(223, 219, 243);
+  background: linear-gradient(to right, hsl(225, 5%, 83%), #ebe0d7);
+  background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
 }
 
 .carousel .slide-holder {
@@ -24,6 +26,8 @@ body {
   width: 35%;
   height: 200px;
   object-fit: contain;
+  background: linear-gradient(to right, hsl(25, 70%, 76%), #de12e9);
+  background: linear-gradient(to bottom, #e487aa 0%, #e87649 100%);
 }
 .carousel .slide iframe {
   margin: 30px;
