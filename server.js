@@ -4,6 +4,8 @@ const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
 
+const usersCtrl = require('./routes/api/usersRoute')
+
 require('dotenv').config();
 require('./config/database');
 
@@ -22,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use(require('./config/checkToken'));
 
 // Put API routes here, before the "catch all" route
-app.use('/api/users', require('./routes/api/usersRoute'));
+app.use('/api/users', usersCtrl );
 app.use('/api', require('./routes/api/categoriesRoute'))
 app.use('/api', require('./routes/api/productsRoute'))
 //app.use('/api', require('./routes/api/paymentsRoute'))

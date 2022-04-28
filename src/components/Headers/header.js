@@ -7,13 +7,26 @@ import { Link } from "react-router-dom";
 import { FiLogIn } from "react-icons/fi";
 import { IoMdCreate } from "react-icons/io";
 import { SiGnuprivacyguard } from "react-icons/si";
+import { logout } from "../../components/MainPages/utilities/users-service"
  
 
 
-function Header() {
+function Header({ user , setUser, toggle, setToggle, showLogin, setShowLogin}) {
   const value = useContext(GlobalState);
+  function handLogout(){
+      logout()
+      setUser = null;
+      setToggle(!toggle);
+  }
   return (
     <header>
+      {user ?
+                    <>
+                        <span>{`Welcome ${user.name}!`}</span>
+                        <span className="logoutButton" onClick={handLogout}>LOG OUT</span>
+                    </>
+                    :
+                    <span className="logoutButton" onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}</span>}
       <div className="menu">
         <img src={Menu} alt="" width="30" />
       </div>

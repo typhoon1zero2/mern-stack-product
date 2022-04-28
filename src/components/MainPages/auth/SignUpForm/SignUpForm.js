@@ -20,6 +20,7 @@ export default class SignUpForm extends Component {
 
   handleSubmit = async (evt) => {
     evt.preventDefault();
+    console.log('test')
     try {
       const formData = { ...this.state };
       delete formData.confirm;
