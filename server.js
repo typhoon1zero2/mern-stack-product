@@ -30,7 +30,7 @@ app.use('/api', require('./routes/api/productsRoute'))
 
 
 // Protect the API routes below from anonymous users
-const ensureLoggedIn = require('./config/ensureLoggedIn');
+//const ensureLoggedIn = require('./config/ensureLoggedIn');
 
 
 // The following "catch all" route (note the *) is necessary

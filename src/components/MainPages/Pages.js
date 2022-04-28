@@ -9,7 +9,7 @@ import NotFound from "./utilities/not-found/notFound";
 import { getUser } from "./utilities/users-service";
 import Footer from '../../components/Footer/footer';
 import Carousel from '../../components/ProductCarousel/productCarousel'
-
+import AboutUs from "../MainPages/AboutUs/aboutUs";
 
 function Pages() {
   const [user, setUser] = useState(getUser());
@@ -22,6 +22,7 @@ function Pages() {
           path="/detail/:id"
           element={<DetailProduct user={user} setUser={setUser} />}
         />
+         <Route path="/about" element={<AboutUs user={user} setUser={setUser} />} />
         <Route
           path="/login"
           element={<Login user={user} setUser={setUser} />}

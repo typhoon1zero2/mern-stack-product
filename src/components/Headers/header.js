@@ -19,13 +19,16 @@ function Header() {
       </div>
       <div className="logo">
         <h1>
-          <Link to="/"><em>ty</em>phoon Store</Link>
+          <Link to="/"><em>ty</em>phoong Store</Link>
         </h1>
       </div>
 
       <ul>
         <li>
           <Link to="/">Products</Link>
+        </li>
+        <li>
+          <Link to="/about">About Us</Link>
         </li>
         <li>
           <Link to="/login"> <FiLogIn style={{ marginRight: "5px" }} />
