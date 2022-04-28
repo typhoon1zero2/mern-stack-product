@@ -52,7 +52,10 @@ code {
 @import url("./components/Footer/footer.module.css");
 
 /* ------------- Carousel ----------------- */
-@import url("./components//ProductCarousel//productCarousel.module.css");
+@import url("./components/ProductCarousel/productCarousel.module.css");
+
+/* ------------- AuthPage ----------------- */
+@import url("./pages/AuthPage/AuthPage.module.css");
 
 
 

@@ -8,11 +8,14 @@
 .footer-content {
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction:column;
     text-align: left;
     margin: 10px;
   }
-  
+  .phong {
+    text-align: center;
+    
+  }
   .sub {
     display: flex;
     justify-content: space-evenly;

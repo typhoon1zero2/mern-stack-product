@@ -9,11 +9,13 @@ import Products from "../../components/MainPages/products/products";
 import DetailProduct from "../../components/MainPages/detailProduct/DetailProduct";
 import Login from "../../components/MainPages/auth/LoginForm/LoginForm";
 import Register from "../../components/MainPages/auth/SignUpForm/SignUpForm";
-import Cart from "../../components/MainPages/cart/cart";
+import Cart from "../../components/MainPages/cart/cart"
 import NotFound from "../../components/MainPages/utilities/not-found/notFound";
 import Footer from "../../components/Footer/footer";
 import Carousel from "../../components/ProductCarousel/productCarousel";
 import AboutUs from "../../components/MainPages/AboutUs/aboutUs";
+
+
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -71,24 +73,25 @@ export default function App() {
                path="/register"
                element={<Register user={user} setUser={setUser} />}
              /> */}
-
+             
               <Route
                 path="/cart"
                 element={<Cart user={user} setUser={setUser} />}
               />
-
+             
               <Route
                 path="*"
                 element={<NotFound user={user} setUser={setUser} />}
               />
             </Routes>
 
-            <Footer />
+          
           </>
         ) : (
           <AuthPage setUser={setUser} showLogin={showLogin}
           setShowLogin={setShowLogin} />
         )}
+          <Footer />
       </DataProvider>
     </div>
   );

@@ -28,11 +28,12 @@ return (
     <div>
         <div className="form-container">
         <form autoComplete="off" onSubmit={handleSubmit}>
-        <h2>Register</h2>
+        <h2>LOGIN</h2>
+        <br />
             <label>Email</label>
-            <input type="email" name="email" value={credentials.email} onChange={handleChange} required />
+            <input type="email" name="email" placeholder='email' value={credentials.email} onChange={handleChange} required />
             <label>Password</label>
-            <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
+            <input type="password" name="password" placeholder='password' value={credentials.password} onChange={handleChange} required />
             <div className="row">
                     <button type="submit">Login</button>
                     <Link to="/register">Register</Link>

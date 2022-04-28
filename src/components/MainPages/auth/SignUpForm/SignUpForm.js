@@ -46,16 +46,16 @@ export default class SignUpForm extends Component {
       <div>
       <div className="form-container">
         <form autoComplete="off" onSubmit={this.handleSubmit}>
-        <h2>Register</h2>
+        <h2>REGISTER</h2>
         <br />
           <label>Name</label>
-          <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
+          <input type="text" name="name" placeholder="name" value={this.state.name} onChange={this.handleChange} required />
           <label>Email</label>
-          <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
+          <input type="email" name="email" placeholder="email" value={this.state.email} onChange={this.handleChange} required />
           <label>Password</label>
-          <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
+          <input type="password" name="password" placeholder="password" value={this.state.password} onChange={this.handleChange} required />
           <label>Confirm</label>
-          <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
+          <input type="password" name="confirm" placeholder="confirm" value={this.state.confirm} onChange={this.handleChange} required />
           <div className="row">
           <button type="submit" disabled={disable}>Register</button>
           <Link to="/login">Login</Link>

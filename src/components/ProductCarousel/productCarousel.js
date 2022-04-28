@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 export default function productCarousel() {
     return (
         <div>
-          <h1>Welcome To <em>ty</em>Phoon Online Store</h1>
+          <h1>Welcome To <em>ty</em>Phoong Online Store</h1>
           <br />
           <Carousel
             showThumbs={true}
@@ -17,7 +17,7 @@ export default function productCarousel() {
             transitionTime={500}
             //axis="vertical"
             //selectedItem={1}
-            //width="700px"
+            //width="800px"
           >
                <div className="slide-holder">
               <img

@@ -4,11 +4,14 @@
     border-radius: 5px;
     padding: 30px;
     margin: 50px auto;
+    text-align: left;
+   
 }
 .form-container h2{
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #555;
+    text-align: left;
 }
 .form-container form input,
 .form-container form button{

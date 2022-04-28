@@ -27,7 +27,7 @@ app.use(require('./config/checkToken'));
 app.use('/api/users', usersCtrl );
 app.use('/api', require('./routes/api/categoriesRoute'))
 app.use('/api', require('./routes/api/productsRoute'))
-//app.use('/api', require('./routes/api/paymentsRoute'))
+app.use('/api', require('./routes/api/paymentsRoute'))
 
 
 
