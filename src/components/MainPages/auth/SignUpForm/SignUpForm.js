@@ -20,7 +20,7 @@ export default class SignUpForm extends Component {
 
   handleSubmit = async (evt) => {
     evt.preventDefault();
-    console.log('test')
+    //console.log('test')
     try {
       const formData = { ...this.state };
       delete formData.confirm;
@@ -33,7 +33,7 @@ export default class SignUpForm extends Component {
       this.props.setUser(user);
     } catch {
       // An error happened on the server
-      this.setState({ error: 'Sign Up Failed - Try Again' });
+      this.setState({ error: 'The Email Already Exists!' });
     }
   };
 
@@ -58,7 +58,7 @@ export default class SignUpForm extends Component {
           <input type="password" name="confirm" placeholder="confirm" value={this.state.confirm} onChange={this.handleChange} required />
           <div className="row">
           <button type="submit" disabled={disable}>Register</button>
-          <Link to="/login">Login</Link>
+          {/* <Link to="/login">Login</Link> */}
           </div>
         </form>
       </div>

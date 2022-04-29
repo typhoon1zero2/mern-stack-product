@@ -1,5 +1,8 @@
-import React, {createContext, useState, useEffect} from 'react';
-import ProductsAPI from './api/ProductsApi/ProductsApi'
+import React, { createContext, useState, useEffect } from 'react';
+import ProductsAPI from './api/ProductsApi/ProductsApi';
+import UserApi from './api/UserApi/UserApi';
+// import CategoriesApI from './api/CategoryApi/CategoryApi';
+
 
 
 export const GlobalState = createContext()
@@ -14,6 +17,8 @@ export const DataProvider = ({children}) =>{
     const state ={
         token: [token, setToken],
         productsAPI: ProductsAPI(),
+        userAPI: UserApi(token),
+        // categoriesAPI: CategoriesApI()
        
     }
 

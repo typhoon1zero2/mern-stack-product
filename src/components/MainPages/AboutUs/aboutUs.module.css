@@ -1,0 +1,37 @@
+
+.section {
+    padding: 5rem 0;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .title h2 {
+    margin-bottom: 0;
+  }
+
+  .title span {
+    width: 50px;
+    height: 3px;
+    background: var(--textColor);
+    margin: 0 1rem;
+  }
+
+.section-center {
+    width: var(--fluid-width);
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .about-text {
+    line-height: 2;
+    max-width: 45em;
+    margin: 0 auto;
+    margin-top: 2rem;
+    color: var(--grey-500);
+  }
+  

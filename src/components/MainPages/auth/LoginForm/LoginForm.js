@@ -36,7 +36,7 @@ return (
             <input type="password" name="password" placeholder='password' value={credentials.password} onChange={handleChange} required />
             <div className="row">
                     <button type="submit">Login</button>
-                    <Link to="/register">Register</Link>
+                    {/* <Link to="/register">Register</Link> */}
                 </div>
         </form>
         </div>

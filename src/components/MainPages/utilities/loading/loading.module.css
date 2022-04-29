@@ -10,10 +10,14 @@
 .loader div{
     width: calc(100% - 15px);
     height: calc(100% - 15px);
-    border: 2px solid #fff;
-    border-top: 2px solid crimson;
-    border-radius: 50%;
+    border: 1px solid rgb(243, 64, 64);
+    border-top: 1px solid rgb(132, 13, 206);
+    border-radius: 60%;
     animation: rotate 10s linear infinite alternate-reverse;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
 }
 @keyframes rotate{
     50%{

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { GlobalState } from "../../../GlobalState";
 import ProductItem from '../../MainPages/utilities/productsItem/ProductItem'
-import Loading from '../utilities/loading/loading';
+import Loading from '../utilities/loading/loading'
 
 
 

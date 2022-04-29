@@ -5,42 +5,41 @@ import Close from "../Headers/icons/close.svg";
 import Cart from "../Headers/icons/cart.svg";
 import { Link } from "react-router-dom";
 import { AiOutlineLogout, AiOutlineLogin } from "react-icons/ai";
-import { IoMdCreate } from "react-icons/io";
-import { SiGnuprivacyguard } from "react-icons/si";
+// import { IoMdCreate } from "react-icons/io";
+// import { SiGnuprivacyguard } from "react-icons/si";
 import { logout } from "../../components/MainPages/utilities/users-service";
 
 function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
-  const value = useContext(GlobalState);
-  function handLogout() {
+  //   const state = useContext(GlobalState)
+  //   const [isLogged] = state.userApi.isLogged
+  //   const [isAdmin] = state.userApi.isAdmin
+  //   const [cart] = state.userApi.cart
+  //   const [menu, setMenu] = useState(false)
+
+  function LogoutBtn() {
     logout();
     setUser = null;
     setToggle(!toggle);
   }
-
-  const adminRouter = () =>{
-    return(
-        <>
-            <li><Link to="/create_product">Create Product</Link></li>
-            <li><Link to="/category">Categories</Link></li>
-        </>
-    )
-}
-
 
   return (
     <header>
       {user ? (
         <>
           <span>{`Welcome, ${user.name}!`}</span>
-          <button className="logoutButton" onClick={handLogout}>
+          <button className="logoutButton" onClick={LogoutBtn}>
             <AiOutlineLogout />
             LOG OUT
           </button>
+          <p>
+            <Link to="/history">History</Link>
+          </p>
         </>
       ) : (
-        <span className="logoutButton" onClick={() => setShowLogin(!showLogin)}><AiOutlineLogin />
+        <button className="loginButton" onClick={() => setShowLogin(!showLogin)}>
+          <AiOutlineLogin />
           {showLogin ? "LOGIN" : "REGISTER"}
-        </span>
+        </button>
       )}
       <div className="menu">
         <img src={Menu} alt="" width="30" />
@@ -55,7 +54,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
 
       <ul>
         <li>
-          <Link to="/">Products</Link>
+          <Link to="/">Shop</Link>
         </li>
         <li>
           <Link to="/about">About Us</Link>

@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .form-container form button{
     width: 150px;
@@ -33,7 +34,16 @@
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
+    background: rgb(198, 174, 211);
+    background: linear-gradient(0deg, rgb(125, 237, 14) 0%, rgb(174, 196, 219) 100%);
 }
+/* 
+.form-container form button:hover{
+    color:blue;
+    box-shadow:  2px 1px ;
+
+} */
+
 .form-container form a{
     color: rgb(67, 16, 233);
     letter-spacing: 1.3px;

@@ -1,6 +1,7 @@
 import SignUpForm from "../../components/MainPages/auth/SignUpForm/SignUpForm";
 import LoginForm from "../../components/MainPages/auth/LoginForm/LoginForm";
 import { useState } from "react";
+// import Logo from "../../components/Logo/Logo"
 
 export default function AuthPage({ setUser, showLogin, setShowLogin }) {
   return (
@@ -12,6 +13,7 @@ export default function AuthPage({ setUser, showLogin, setShowLogin }) {
           Welcome to my <em>ty</em>Phoong Store!
         </p>
       </div>
+      {/* <Logo /> */}
       {showLogin ? (
         <LoginForm setUser={setUser} />
       ) : (

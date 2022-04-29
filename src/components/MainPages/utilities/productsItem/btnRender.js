@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 
 
 export default function BtnRender({ product }) {
+
+  
   return (
-    <div class="row-btn">
+    <div className="row-btn">
     <Link id="btn-buy" to="#!">
           Buy
     </Link>

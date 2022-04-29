@@ -14,7 +14,10 @@ header{
 /* header .logo{
     flex: 1;
 } */
-
+header p:hover{
+    background: rgb(161, 19, 238);
+    background: linear-gradient(0deg, rgb(125, 237, 14) 0%, rgb(174, 196, 219) 100%);
+}
 header span{
     text-transform: uppercase;
     color: rgb(2, 1, 10);
@@ -22,6 +25,21 @@ header span{
 header button{
     text-transform: uppercase;
     color: rgb(241, 12, 12);
+}
+header button:hover{
+    background: rgb(161, 19, 238);
+    background: linear-gradient(0deg, rgb(125, 237, 14) 0%, rgb(174, 196, 219) 100%);
+}
+
+.loginButton{
+    color:blue;
+    box-shadow:  2px 1px ;
+    font-size: medium;
+  
+}
+.loginButton:hover{
+    background: rgb(161, 19, 238);
+    background: linear-gradient(0deg, rgb(125, 237, 14) 0%, rgb(174, 196, 219) 100%);
 }
 
 header ul li{
@@ -31,6 +49,9 @@ header ul li{
 }
 header ul li:hover{
     opacity: 2;
+    background: rgb(161, 19, 238);
+    background: linear-gradient(0deg, rgb(125, 237, 14) 0%, rgb(174, 196, 219) 100%);
+    
 }
 .menu{
     display: none;

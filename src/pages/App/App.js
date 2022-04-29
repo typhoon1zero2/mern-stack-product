@@ -14,6 +14,9 @@ import NotFound from "../../components/MainPages/utilities/not-found/notFound";
 import Footer from "../../components/Footer/footer";
 import Carousel from "../../components/ProductCarousel/productCarousel";
 import AboutUs from "../../components/MainPages/AboutUs/aboutUs";
+import OrderHistory from '../../components/MainPages/history/OrderHistory'
+import OrderDetails from '../../components/MainPages/history/OrderDetail'
+
 
 
 
@@ -49,7 +52,7 @@ export default function App() {
             />
         {user ? (
           <>
-         
+          
             <Carousel />
 
             <Routes>
@@ -74,6 +77,14 @@ export default function App() {
                element={<Register user={user} setUser={setUser} />}
              /> */}
              
+             <Route
+                path="/history"
+                element={<OrderHistory user={user} setUser={setUser} />}
+              />
+              <Route
+                path="/history/:id"
+                element={<OrderDetails user={user} setUser={setUser} />}
+              />
               <Route
                 path="/cart"
                 element={<Cart user={user} setUser={setUser} />}
@@ -87,9 +98,12 @@ export default function App() {
 
           
           </>
+          
         ) : (
+          
           <AuthPage setUser={setUser} showLogin={showLogin}
           setShowLogin={setShowLogin} />
+          
         )}
           <Footer />
       </DataProvider>
