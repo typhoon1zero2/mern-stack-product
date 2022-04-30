@@ -70,3 +70,14 @@ button {
 /* ------------- Order History ----------------- */
 @import url("./components/MainPages/history/history.module.css");
 
+/* ------------- Categories ----------------- */
+@import url("./components/MainPages/categories/category.module.css");
+
+/* ------------- Create Products ----------------- */
+@import url("./components/MainPages/createProduct/createProduct.module.css");
+
+/* ------------- Detail Products ----------------- */
+@import url("./components/MainPages/detailProduct/detailProduct.module.css");
+
+/* ------------- AuthPage----------------- */
+@import url("./pages/AuthPage/AuthPage.module.css");

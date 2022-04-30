@@ -4,7 +4,7 @@ import {GlobalState} from '../../../GlobalState'
 
 export default function OrderDetail() {
   const state = useContext(GlobalState)
-  const [history] = state.userAPI.history
+  const [history] = state.UserApi.history
   const [orderDetails, setOrderDetails] = useState([])
 
   const params = useParams()

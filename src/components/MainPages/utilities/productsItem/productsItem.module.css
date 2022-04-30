@@ -36,14 +36,14 @@
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.row-btn{
+.row_btn{
     width: 100%;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.row-btn a{
+.row_btn a{
     width: 40%;
     text-align: center;
     text-transform: uppercase;
@@ -52,11 +52,11 @@
     letter-spacing: 2px;
     padding: 6px;
 }
-#btn-buy{
+#btn_buy{
     background: rgb(16, 14, 14);
     margin-right: 5px;
 }
-#btn-view{
+#btn_view{
     background: rgb(34, 125, 217);
     margin-left: 5px;
 }

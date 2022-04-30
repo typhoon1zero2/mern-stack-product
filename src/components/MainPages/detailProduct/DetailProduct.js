@@ -1,14 +1,13 @@
 import React, { useContext, useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { GlobalState } from "../../../GlobalState";
 import ProductItem from "../utilities/productsItem/ProductItem";
 
 function DetailProduct() {
   const params = useParams();
   const state = useContext(GlobalState);
-  const [products] = state.productsAPI.products;
-  //const addCart = state.userAPI.addCart
+  const [products] = state.ProductsApi.products;
+  const addCart = state.UserApi.addCart
   const [detailProduct, setDetailProduct] = useState([]);
 
   useEffect(() => {
@@ -26,37 +25,37 @@ function DetailProduct() {
 
   return (
     <>
-      <div className="detail">
-        <img src={detailProduct.images} alt="detail" />
-        <div className="box-detail">
-          <div className="row">
-            <h2>{detailProduct.title}</h2>
-            <h5>#ID: {detailProduct.product_id}</h5>
-          </div>
-          <span>$ {detailProduct.price}</span>
-          <p>{detailProduct.description}</p>
-          <p>{detailProduct.content}</p>
-          <p>Sold: {detailProduct.sold}</p>
-          <Link to="/cart" className="cart">
-            Buy Now
-          </Link>
+        <div className="detail">
+            <img src={detailProduct.images} alt="" />
+            <div className="box-detail">
+                <div className="row">
+                    <h2>{detailProduct.title}</h2>
+                    <h6>#id: {detailProduct.product_id}</h6>
+                </div>
+                <span>$ {detailProduct.price}</span>
+                <p>{detailProduct.description}</p>
+                <p>{detailProduct.content}</p>
+                <p>Sold: {detailProduct.sold}</p>
+                <Link to="/cart" className="cart"
+                onClick={() => addCart(detailProduct)}>
+                    Buy Now
+                </Link>
+            </div>
         </div>
-      </div>
-      <div>
-        <h2>Related products</h2>
-        <div className="products">
-          {
-            products.map(product =>{
-                return product.categories ===  detailProduct.categories
-                    ? <ProductItem key={ product._id } product={ product } />
-                    :
-                    null
-            })
-          }
+
+        <div>
+            <h2>Related products</h2>
+            <div className="products">
+                {
+                    products.map(product => {
+                        return product.category === detailProduct.category 
+                            ? <ProductItem key={product._id} product={product} /> : null
+                    })
+                }
+            </div>
         </div>
-      </div>
     </>
-  );
+)
 }
 
 export default DetailProduct;

@@ -9,12 +9,12 @@ import { AiOutlineLogout, AiOutlineLogin } from "react-icons/ai";
 // import { SiGnuprivacyguard } from "react-icons/si";
 import { logout } from "../../components/MainPages/utilities/users-service";
 
-function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
-  //   const state = useContext(GlobalState)
-  //   const [isLogged] = state.userApi.isLogged
-  //   const [isAdmin] = state.userApi.isAdmin
-  //   const [cart] = state.userApi.cart
-  //   const [menu, setMenu] = useState(false)
+function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin  }) {
+    // const state = useContext(GlobalState)
+    // const [isLogged] = state.UserApi.isLogged
+    // const [isAdmin] = state.UserApi.isAdmin
+    // const [cart] = state.UserApi.cart
+    // const [menu, setMenu] = useState(false)
 
   function LogoutBtn() {
     logout();
@@ -27,10 +27,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
       {user ? (
         <>
           <span>{`Welcome, ${user.name}!`}</span>
-          <button className="logoutButton" onClick={LogoutBtn}>
-            <AiOutlineLogout />
-            LOG OUT
-          </button>
+         
           <p>
             <Link to="/history">History</Link>
           </p>
@@ -51,7 +48,8 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
           </Link>
         </h1>
       </div>
-
+    
+    
       <ul>
         <li>
           <Link to="/">Shop</Link>
@@ -75,6 +73,10 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
           <img src={Cart} alt="" width="30" />
         </Link>
       </div>
+      <button className="logoutButton" onClick={LogoutBtn}>
+            <AiOutlineLogout />
+            LOG OUT
+          </button>
     </header>
   );
 }

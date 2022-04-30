@@ -5,10 +5,8 @@ import PaypalButton from '../cart/PayPalBtn'
 
 
 export default function Cart() {
-
-
   const state = useContext(GlobalState)
-  const [cart, setCart] = state.userAPI.cart
+  const [cart, setCart] = state.UserApi.cart
   const [token] = state.token
   const [total, setTotal] = useState(0)
 
@@ -26,7 +24,7 @@ export default function Cart() {
   },[cart])
 
   const addToCart = async (cart) =>{
-      await axios.patch('/user/addcart', {cart}, {
+      await axios.fetch('/user/addcart', {cart}, {
           headers: {Authorization: token}
       })
   }

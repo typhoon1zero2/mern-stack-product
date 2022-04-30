@@ -1,4 +1,8 @@
-body {
+/* body {
+  text-align: center;
+  
+} */
+.carousel{
   text-align: center;
 }
 
@@ -8,25 +12,35 @@ body {
 }
 
 .carousel .slide {
-  color: rgb(20, 18, 18);
+  border-radius: 10px;
   background: linear-gradient(to right, hsl(225, 5%, 83%), #ebe0d7);
   background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  
 }
 
 .carousel .slide-holder {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  height: 12rem;
   width: 100%;
-  height: 100%;
+  object-fit: cover;
+
 }
 .carousel .slide img {
-  margin: 30px;
-  width: 35%;
-  height: 200px;
-  object-fit: contain;
-  background: linear-gradient(to right, hsl(25, 70%, 76%), #de12e9);
-  background: linear-gradient(to bottom, #e487aa 0%, #e87649 100%);
+  border-radius:15px;
+  margin: 15px;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to right, hsl(24, 5%, 19%), #580fcf);
+  background: linear-gradient(to bottom, #f3b3cb 0%, #efeded 100%);
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  -ms-border-radius:15px;
+  -o-border-radius:15px;
 }
 .carousel .slide iframe {
   margin: 30px;
@@ -53,7 +67,8 @@ body {
   margin: 30px;
 }
 .carousel img {
-  width: 50px;
-  height: 50px;
+  border-radius:15px;
+  width: 25px;
+  height: 25px;
   object-fit: contain;
 }

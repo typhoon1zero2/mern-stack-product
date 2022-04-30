@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 
-function UserApI(token) {
+function UserApi(token) {
     const [isLogged, setIsLogged] = useState(false)
     const [isAdmin, setIsAdmin] = useState(false)
     const [cart, setCart] = useState([])
@@ -11,7 +11,7 @@ function UserApI(token) {
         if(token){
             const getUser = async () =>{
                 try {
-                    const res = await axios.get('/user/infor', {
+                    const res = await axios.get('/user/info', {
                         headers: {Authorization: token}
                     })
 
@@ -33,7 +33,7 @@ function UserApI(token) {
     
 
     const addCart = async (product) => {
-        if(!isLogged) return alert("Please login to continue buying")
+        //if(!isLogged) return alert("Please login to continue buying")
 
         const check = cart.every(item =>{
             return item._id !== product._id
@@ -60,4 +60,4 @@ function UserApI(token) {
     }
 }
 
-export default UserApI
+export default UserApi

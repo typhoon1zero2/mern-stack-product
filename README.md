@@ -9,3 +9,6 @@ This products website : User can login & Register with their email. User can typ
 
 
 ```
+
+### Technologies
+- Use four technologies: React (Frontend), Node.js (Backend runtime environment), Express (Backend Framework), MongoDB (Database).
