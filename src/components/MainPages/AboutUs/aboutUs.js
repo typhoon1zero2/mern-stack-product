@@ -3,14 +3,12 @@ import Diagram from "../../../components/Headers/icons/diagamdraw.png";
 
 function aboutUs() {
   return (
-    <section className="section section-center">
+    <section className="section">
+      <h2>A MERN Stack Application</h2>
+      <br /><br/>
       <div class="title">
-        <span></span>
-        <h2>A MERN Stack Application</h2>
-        <span></span>
+        <img src={Diagram} alt="" />
       </div>
-
-      <img src={Diagram} alt="" />
     </section>
   );
 }

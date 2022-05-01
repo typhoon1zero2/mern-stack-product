@@ -62,7 +62,7 @@ button {
 /* @import url("./components/Logo//Logo.module.css");
  */
 /* ------------- About us ----------------- */
-@import url("./components/MainPages//AboutUs/aboutUs.module.css");
+@import url("./components/MainPages/AboutUs/aboutUs.module.css");
 
 /* ------------- Cart ----------------- */
 @import url("./components/MainPages/cart/cart.module.css");

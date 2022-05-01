@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { DataProvider } from "../../GlobalState";
 import Header from "../../components/Headers/header";
-import MainPages from "../../components/MainPages/Pages.js";
+//import MainPages from "../../components/MainPages/Pages.js";
 import { Routes, Route } from "react-router-dom";
 import AuthPage from "../../pages/AuthPage/AuthPage";
 import { getUser } from "../../components/MainPages/utilities/users-service";
@@ -22,7 +22,7 @@ export default function App() {
   const [user, setUser] = useState(getUser());
   const [toggle, setToggle] = useState(true);
   const [showLogin, setShowLogin] = useState(true);
-  //const state = useContext(GlobalState);
+  // const state = useContext(GlobalState);
   // const [isLogged] = state.UserApi.isLogged;
   // const [isAdmin] = state.UserApi.isAdmin;
 
@@ -47,7 +47,6 @@ export default function App() {
           setToggle={setToggle}
           showLogin={showLogin}
           setShowLogin={setShowLogin}
-         
         />
         {user ? (
           <>
@@ -74,9 +73,12 @@ export default function App() {
 
               <Route
                 path="/create_product"
-                element={<CreateProduct user={user} setUser={setUser}  />}
+                element={<CreateProduct user={user} setUser={setUser} />}
               />
-              <Route path="/edit_product/:id" user={user} setUser={setUser}  />
+              <Route
+                path="/edit_product/:id"
+                element={<CreateProduct user={user} setUser={setUser} />}
+              />
 
               <Route
                 path="/history"
@@ -85,7 +87,7 @@ export default function App() {
 
               <Route
                 path="/history/:id"
-                element={<OrderDetails user={user} setUser={setUser}  />}
+                element={<OrderDetails user={user} setUser={setUser} />}
               />
               <Route
                 path="/cart"
