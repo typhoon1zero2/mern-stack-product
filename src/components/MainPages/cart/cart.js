@@ -2,6 +2,7 @@ import React, {useContext, useState, useEffect} from 'react'
 import { GlobalState } from '../../../GlobalState'
 import axios from 'axios'
 import PaypalButton from '../cart/PayPalBtn'
+import { FiDelete } from 'react-icons/fi'
 
 
 export default function Cart() {
@@ -102,7 +103,7 @@ export default function Cart() {
                         
                         <div className="delete" 
                         onClick={() => removeProduct(product._id)}>
-                            X
+                            <FiDelete />
                         </div>
                     </div>
                 </div>
