@@ -1,11 +1,14 @@
 const User = require('../../models/Users');
 const jwt = require('jsonwebtoken');
+const Payments = require('../../models/Payments');
 const bcrypt = require('bcrypt');
 
 module.exports = {
   create,
   login,
-  checkToken
+  checkToken, 
+  addCart,
+  history
 };
 
 function checkToken(req, res) {
@@ -39,6 +42,33 @@ async function create(req, res) {
     res.status(400).json(e);
   }
 }
+
+async function addCart(req, res){
+  try {
+    const user = await User.findById(req.user.id)
+            if(!user) return res.status(400).json({ msg: "User does not exist." })
+
+            await User.findOneAndUpdate({_id: req.user.id}, {
+                cart: req.body.cart
+            })
+
+             res.status(200).json({ msg: "Added to cart" })
+
+  }catch(e) {
+    res.status(400).json(e);
+  }
+}
+
+async function history(req, res){
+  try{
+    const history = await Payments.find({ user_id : req.user.id });
+    res.json(history)
+
+  }catch(e) {
+    res.status(400).json(e);
+  }
+}
+
 
 
 /*-- Helper Functions --*/
