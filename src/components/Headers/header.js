@@ -10,10 +10,10 @@ import { AiOutlineLogout, AiOutlineLogin } from "react-icons/ai";
 import { logout } from "../../components/MainPages/utilities/users-service";
 
 function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
-   const state = useContext(GlobalState)
+  const state = useContext(GlobalState);
   // const [isLogged] = state.UserApi.isLogged
   // const [isAdmin] = state.UserApi.isAdmin
-  const [cart] = state.UserApi.cart
+  const [cart] = state.UserApi.cart;
   // const [menu, setMenu] = useState(false)
 
   function LogoutBtn() {
@@ -22,15 +22,17 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
     setToggle(!toggle);
   }
 
+  let test = user;
+
+  function handleCheck() {
+    console.log(user.name === "typhoon");
+  }
+
   return (
     <header>
       {user ? (
         <>
           <span>{`Welcome, ${user.name}!`}</span>
-
-          <p>
-            <Link to="/history">History</Link>
-          </p>
         </>
       ) : (
         <button
@@ -41,6 +43,20 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
           {showLogin ? "LOGIN" : "REGISTER"}
         </button>
       )}
+
+      {(() => {
+        if (user != null) {
+          if (user.name === "admin") {
+            return (
+              <p>
+                <Link to="/create_product"> Create Product</Link>
+              </p>
+            );
+          }
+        } else {
+        }
+      })()}
+      <button onClick={handleCheck}> button </button>
       <div className="menu">
         <img src={Menu} alt="" width="30" />
       </div>
@@ -56,6 +72,9 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
         <li>
           <Link to="/">Shop</Link>
         </li>
+        <li>
+            <Link to="/history">History</Link>
+            </li>
         <li>
           <Link to="/about">About Us</Link>
         </li>

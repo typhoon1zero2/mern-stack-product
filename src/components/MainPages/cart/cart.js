@@ -85,7 +85,7 @@ export default function Cart() {
     <div>
         {
             cart.map(product => (
-                <div className="detail cart" key={product._id}>
+                <div className="detail cart" key={product._id} >
                     <img src={product.images} alt="" />
 
                     <div className="box-detail">
