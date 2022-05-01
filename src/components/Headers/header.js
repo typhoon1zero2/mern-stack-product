@@ -9,12 +9,12 @@ import { AiOutlineLogout, AiOutlineLogin } from "react-icons/ai";
 // import { SiGnuprivacyguard } from "react-icons/si";
 import { logout } from "../../components/MainPages/utilities/users-service";
 
-function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin  }) {
-    // const state = useContext(GlobalState)
-    // const [isLogged] = state.UserApi.isLogged
-    // const [isAdmin] = state.UserApi.isAdmin
-    // const [cart] = state.UserApi.cart
-    // const [menu, setMenu] = useState(false)
+function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
+   const state = useContext(GlobalState)
+  // const [isLogged] = state.UserApi.isLogged
+  // const [isAdmin] = state.UserApi.isAdmin
+  const [cart] = state.UserApi.cart
+  // const [menu, setMenu] = useState(false)
 
   function LogoutBtn() {
     logout();
@@ -27,13 +27,16 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin  }) 
       {user ? (
         <>
           <span>{`Welcome, ${user.name}!`}</span>
-         
+
           <p>
             <Link to="/history">History</Link>
           </p>
         </>
       ) : (
-        <button className="loginButton" onClick={() => setShowLogin(!showLogin)}>
+        <button
+          className="loginButton"
+          onClick={() => setShowLogin(!showLogin)}
+        >
           <AiOutlineLogin />
           {showLogin ? "LOGIN" : "REGISTER"}
         </button>
@@ -48,8 +51,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin  }) 
           </Link>
         </h1>
       </div>
-    
-    
+
       <ul>
         <li>
           <Link to="/">Shop</Link>
@@ -67,16 +69,16 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin  }) 
         </li>
       </ul>
       <div className="cart-icon">
-        <span>0</span>
+        <span>{cart.length}</span>
         <Link to="/cart">
           {" "}
           <img src={Cart} alt="" width="30" />
         </Link>
       </div>
       <button className="logoutButton" onClick={LogoutBtn}>
-            <AiOutlineLogout />
-            LOG OUT
-          </button>
+        <AiOutlineLogout />
+        LOG OUT
+      </button>
     </header>
   );
 }
