@@ -3,6 +3,8 @@ const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
+const fileUpload = require('express-fileupload')
+const cookieParser = require('cookie-parser')
 
 const usersCtrl = require('./routes/api/usersRoute')
 
@@ -10,6 +12,12 @@ require('dotenv').config();
 require('./config/database');
 
 const app = express();
+app.use(cookieParser())
+
+//Cloudinary Upload Picture
+app.use(fileUpload({
+  useTempFiles: true
+}))
 
 app.use(logger('dev'));
 // there's no need to mount express.urlencoded middleware
@@ -28,6 +36,8 @@ app.use('/api/users', usersCtrl );
 app.use('/api', require('./routes/api/categoriesRoute'))
 app.use('/api', require('./routes/api/productsRoute'))
 app.use('/api', require('./routes/api/paymentsRoute'))
+app.use('/api', require('./routes/api/upload'))
+
 
 
 // Protect the API routes below from anonymous users
