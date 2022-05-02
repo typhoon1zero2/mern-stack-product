@@ -10,17 +10,20 @@ This products website : User can login & Register with their email. User can typ
 3. Admins manage and control the entire store components 
 ```
 ## Demo
-## Demo
 
 This application is deployed on Heroku. Please check it out :smile: [here](link).
 
 * features:
   * Node provides the backend environment for this application
-  * Express middleware is used to handle requests, routes
+  * Authentication & Authorization
   * Mongoose schemas to model the application data
   * React for displaying UI components
-  * Redux to manage application's state
-  * Redux Thunk middleware to handle asynchronous redux actions
+  * Adding Filter, Pagination, Search
+  * Adding Shopping Cart
+  * Handle Checkout & Payments
+  * Deployment
+
+
 
 ## Simple build for production
 
@@ -51,4 +54,3 @@ $ npm run start:dev
 
 - [React](https://reactjs.org/)
 
-- [Webpack](https://webpack.js.org/)

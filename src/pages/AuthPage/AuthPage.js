@@ -8,9 +8,7 @@ export default function AuthPage({ setUser, showLogin, setShowLogin }) {
     <main className="auth-page">
      <br />
       <h1 className="logo"> <GiWorld /></h1>
-        <h2 className="login">
-          Login || Register
-        </h2>
+    
 
       {/* <Logo /> */}
       {showLogin ? (

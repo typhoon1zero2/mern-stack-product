@@ -24,15 +24,17 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
 
   let test = user;
 
-  function handleCheck() {
-    console.log(user.name === "typhoon");
-  }
 
   return (
     <header>
       {user ? (
         <>
+          <button className="logoutButton" onClick={LogoutBtn}>
+        <AiOutlineLogout />
+        LOG OUT
+      </button>
           <span>{`Welcome, ${user.name}!`}</span>
+        
         </>
       ) : (
         <button
@@ -50,13 +52,13 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
             return (
               <p>
                 <Link to="/create_product"> Create Product</Link>
+                <Link to="/history">History</Link>
               </p>
             );
           }
         } else {
         }
       })()}
-      <button onClick={handleCheck}> button </button>
       <div className="menu">
         <img src={Menu} alt="" width="30" />
       </div>
@@ -72,9 +74,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
         <li>
           <Link to="/">Shop</Link>
         </li>
-        <li>
-            <Link to="/history">History</Link>
-            </li>
+       
         <li>
           <Link to="/about">About Us</Link>
         </li>
@@ -94,10 +94,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
           <img src={Cart} alt="" width="30" />
         </Link>
       </div>
-      <button className="logoutButton" onClick={LogoutBtn}>
-        <AiOutlineLogout />
-        LOG OUT
-      </button>
+      
     </header>
   );
 }
