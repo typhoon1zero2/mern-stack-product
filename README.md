@@ -3,8 +3,8 @@
 ### DESCRIPTION
 
 ```js
-we are using Full Stack JavaScript to design and develop our applications. 
-This means we would be using Node, Express and MongoDB to design the REST APIs and then we would use those APIs in our React frontend.
+I'm are using Full Stack JavaScript to design and develop an applications. 
+This means I would be using Node, Express and MongoDB to design the REST APIs and then we would use those APIs in React frontend.
 ```
 
 ### Website Details 
