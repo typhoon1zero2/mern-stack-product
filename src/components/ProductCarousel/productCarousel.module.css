@@ -14,7 +14,7 @@
 .carousel .slide {
   border-radius: 10px;
   background: linear-gradient(to right, hsl(225, 5%, 83%), #ebe0d7);
-  background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
+  background: linear-gradient(to bottom, #c3ebe1 0%, #eaecee 100%);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -35,8 +35,8 @@
   margin: 15px;
   width: 100%;
   height: 150px;
-  background: linear-gradient(to right, hsl(24, 5%, 19%), #580fcf);
-  background: linear-gradient(to bottom, #f3b3cb 0%, #efeded 100%);
+  background: linear-gradient(to right, hsl(60, 58%, 81%), #f4f3f5);
+  background: linear-gradient(to bottom, #f0eaec 0%, #ec8181 100%);
   -webkit-border-radius:15px;
   -moz-border-radius:15px;
   -ms-border-radius:15px;

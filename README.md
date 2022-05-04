@@ -1,20 +1,20 @@
-# This is A Single-Page-Application(SPA) MERN stack (MongoDB, Express, React and Node).
+## `A Single-Page-Application(SPA) - MERN((MongoDB, Express, React and Node)) Full Stack .`
 
-# DESCRIPTION
+### DESCRIPTION
 
 ```js
 we are using Full Stack JavaScript to design and develop our applications. 
 This means we would be using Node, Express and MongoDB to design the REST APIs and then we would use those APIs in our React frontend.
 ```
 
-## Website Details 
+### Website Details 
 ```js
 This products website is an Upgraded from ProductsApp (project #2): User can login & Register with their email. 
 User can type their name, email & password. Users & Admins Control:
 1. Buyers browse the store categories, products, brands add cart and payment.
 2. Admins manage and control the entire store components 
 ```
-## Demo
+### Demo
 
 This application is deployed on Heroku. Please check it out :smile: [here](link).
 
@@ -31,20 +31,20 @@ This application is deployed on Heroku. Please check it out :smile: [here](link)
   * Deployment heroku
   * Using Cloudinary url to upload images
 
-## Run the application for development
+### Run the application for development
 ```
 Back-end
 $ npm run dev - http://localhost:3001/
 
 ```
-## Run the application for production
+### Run the application for production
 ```
 Front-end
 $ npm run start:dev - http://localhost:3000/
 ```
 
 
-## Languages & Technologies 
+### Languages & Technologies 
 
 - [Node](https://nodejs.org/en/) - [Express](https://expressjs.com/)
 - [Mongoose](https://mongoosejs.com/) - [React](https://reactjs.org/)

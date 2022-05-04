@@ -1,8 +1,10 @@
-import React, {useContext, useState, useEffect} from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { GlobalState } from '../../../GlobalState'
 import axios from 'axios'
 import PaypalButton from '../cart/PayPalBtn'
-// import { FiDelete } from 'react-icons/fi'
+ import { RiDeleteBack2Fill } from 'react-icons/ri'
+ import { ImPlus , ImMinus } from 'react-icons/im'
+
 
 
 export default function Cart() {
@@ -97,14 +99,14 @@ return (
                         <p>{product.content}</p>
 
                         <div className="amount">
-                            <button onClick={() => decrement(product._id)}> - </button>
+                            <button onClick={() => decrement(product._id)}>< ImMinus /></button>
                             <span>{product.quantity}</span>
-                            <button onClick={() => increment(product._id)}> + </button>
+                            <button onClick={() => increment(product._id)}> <ImPlus /> </button>
                         </div>
                         
                         <div className="delete" 
                         onClick={() => removeProduct(product._id)}>
-                            X
+                            <RiDeleteBack2Fill />
                         </div>
                     </div>
                 </div>

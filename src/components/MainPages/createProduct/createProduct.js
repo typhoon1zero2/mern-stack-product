@@ -8,8 +8,8 @@ const initialState = {
     product_id: '',
     title: '',
     price: 0,
-    description: 'Description Here',
-    content: 'Content here',
+    description: 'Enter Description Here',
+    content: 'Enter Content here',
     category: '',
     _id: ''
 }
@@ -51,7 +51,7 @@ function CreateProduct() {
     const handleUpload = async e =>{
         e.preventDefault()
         try {
-            if(!isAdmin) return alert("You're not an admin")
+            //if(!isAdmin) return alert("You're not an admin")
             const file = e.target.files[0]
             
             if(!file) return alert("File not exist.")
@@ -67,7 +67,7 @@ function CreateProduct() {
 
             setLoading(true)
             const res = await axios.post('/api/upload', formData, {
-                headers: {'content-type': 'multipart/form-data', Authorization: token}
+                headers: {'content-type': 'multipart/form-data'}
             })
             setLoading(false)
             setImages(res.data)
@@ -99,7 +99,7 @@ function CreateProduct() {
     const handleSubmit = async e =>{
         e.preventDefault()
         try {
-           // if(!isAdmin) return alert("You're not an admin")
+            //if(!isAdmin) return alert("You're not an admin")
             if(!images) return alert("No Image Upload")
 
             if(onEdit){

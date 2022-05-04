@@ -34,32 +34,32 @@ export default function productCarousel() {
             </div>
             <div className="slide-holder">
               <img
-                alt="Cleats"
-                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651590473/test/wrwaws9xivp69ectolin.webp"
+                alt="MacBook Pro"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651697399/test/ribg24eljrlrxs33xslj.png"
               />
               <div className="text-container">
-                <h2>Soccer Cleat</h2>
+                <h2>MacBook Pro</h2>
                 <p>
-                Cleat
+                    Apple M1 Pro or M1 Max chip for a massive leap in CPU, GPU, and machine learning performance
+                </p>
+              </div>
+            </div>
+            <div className="slide-holder">
+              <img
+                alt="KID GUCCI SHIRT"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651697821/test/etr0g3efafmjk6hqugfr.png"
+              />
+              <div className="text-container">
+                <h2>KID GUCCI SHIRT</h2>
+                <p>
+                    Gucci Shirt for kids
                 </p>
               </div>
             </div>
             <div className="slide-holder">
               <img
                 alt=""
-                src="https://content.thewosgroup.com/productimage/40921407/40921407_2.jpg?impolicy=zoom"
-              />
-              <div className="text-container">
-                <h2>PRE-OWNED ROLEX BY ANALOG SHIFT</h2>
-                <p>
-                The Reference 1680, originally released in 1966, deviated from previous iterations of the Submariner with the inclusion of a date function. To some, this change was remarkably divisive because, according to the diehards, if you need to know the date during a dive, you're kind of screwed.
-                </p>
-              </div>
-            </div>
-            <div className="slide-holder">
-              <img
-                alt=""
-                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/413676c9-f4e4-49f5-939e-5de2f0265224/freak-3-se-little-kids-shoes-27wTlX.png"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651697727/test/weezxyuw8gnhhnsyhkzh.png"
               />
               <div className="text-container">
                 <h2>freak 3 se</h2>
@@ -74,9 +74,57 @@ export default function productCarousel() {
                 src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/3d901888-7ba2-45e8-91a6-5ceeed77a0e9/boston-celtics-statement-edition-jordan-dri-fit-adv-nba-authentic-jersey-sfNVW5.png"
               />
               <div className="text-container">
-                <h2>boston celtics statement edition</h2>
+                <h2>GUCCI SHIRT</h2>
                 <p>
-                The Boston Celtics Statement Edition sets the tone for big games and rivalries, when players want to make a bold impression.
+                  The Boston Celtics Statement Edition sets the tone for big games and rivalries, when players want to make a bold impression.
+                </p>
+              </div>
+            </div>
+            <div className="slide-holder">
+              <img
+                alt="ONTHEGO MM"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651697055/test/zbkyiqkgn7a11w18h2ns.png"
+              />
+              <div className="text-container">
+                <h2>ONTHEGO MM</h2>
+                <p>
+                The OnTheGo tote bag is made from Monogram Empreinte cowhide leather, featuring the Monogram pattern on different-colored leathers. The classic Monogram motif is first embossed, then printed on the leather. This is a roomy bag and can easily fit a laptop. Its two sets of handles, short and long, give carry options.
+                </p>
+              </div>
+            </div>
+            <div className="slide-holder">
+              <img
+                alt="Yeezy 350"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651696401/test/kmopxyyvlqtham0gzis0.png"
+              />
+              <div className="text-container">
+                <h2>Yeezy 350</h2>
+                <p>
+                The OnTheGo tote bag is made from Monogram Empreinte cowhide leather, featuring the Monogram pattern on different-colored leathers. The classic Monogram motif is first embossed, then printed on the leather. This is a roomy bag and can easily fit a laptop. Its two sets of handles, short and long, give carry options.
+                </p>
+              </div>
+            </div>
+            <div className="slide-holder">
+              <img
+                alt="Rolex"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651701833/test/jsgejekypi755inssrqe.png"
+              />
+              <div className="text-container">
+                <h2>Rolex GMT I</h2>
+                <p>
+                Designed to show the time in two different time zones simultaneously, the GMT-Master, launched in 1955, was originally developed as a navigation instrument for professionals criss-crossing the globe.
+                </p>
+              </div>
+            </div>
+            <div className="slide-holder">
+              <img
+                alt="Rolex"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651701790/test/j3pm9qv0oqb6wnjpi2rr.png"
+              />
+              <div className="text-container">
+                <h2>Rolex GMT 2</h2>
+                <p>
+                Designed to show the time in two different time zones simultaneously, the GMT-Master, launched in 1955, was originally developed as a navigation instrument for professionals criss-crossing the globe.
                 </p>
               </div>
             </div>
