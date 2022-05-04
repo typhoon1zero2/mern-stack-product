@@ -1,10 +1,10 @@
 # This is A Single-Page-Application(SPA) MERN-FullStack-Product
 
 
-## Website Details
+## Website Details 
 
 ```js
-This products website : User can login & Register with their email. User can type their name, email & password. Users & Admins Control:
+This products website is an Upgraded from ProductsApp (project #2): User can login & Register with their email. User can type their name, email & password. Users & Admins Control:
 1. Buyers browse the store categories, products and brands
 2. Sellers or Merchants manage their own brand component
 3. Admins manage and control the entire store components 
