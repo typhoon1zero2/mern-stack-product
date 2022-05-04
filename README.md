@@ -15,8 +15,10 @@ User can type their name, email & password. Users & Admins Control:
 2. Admins manage and control the entire store components 
 ```
 ### Demo
-
 This application is deployed on Heroku. Please check it out :smile: [here](link).
+
+### Wire-frame
+![Wireframe](./img/Wireframe-Project3.jpeg)
 
 ### So, the features we would be having in the application that we would be building are:
   * Node provides the backend environment for this application
