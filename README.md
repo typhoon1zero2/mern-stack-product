@@ -9,18 +9,8 @@ This means we would be using Node, Express and MongoDB to design the REST APIs a
 
 ### Website Details 
 ```js
-This products website is an Upgraded from ProductsApp (project #2): User can login & Register with their email. 
-User can type their name, email & password. Users & Admins Control:
-1. Buyers browse the store categories, products, brands add cart and payment.
-2. Admins manage and control the entire store components 
-```
-### Demo
-This application is deployed on Heroku. Please check it out :smile: [here](link).
-
-### Wire-frame
-![Wireframe](./img/Wireframe-Project3.jpeg)
-
-### So, the features we would be having in the application that we would be building are:
+This products website is a continuation from ProductsApp (project #2): 
+So, the features we would be having in the application that we would be building are:
   * Node provides the backend environment for this application
   * Authentication using JSON Web Tokens (JWT).
   * Option to add, edit, view and delete all the items in our store.
@@ -31,7 +21,18 @@ This application is deployed on Heroku. Please check it out :smile: [here](link)
   * Adding Shopping Cart
   * Handle Checkout & Payments
   * Deployment heroku
-  * Using Cloudinary url to upload images
+  * Using Cloudinary API & url to upload images
+  
+Users & Admins Control:
+1. USER:  browse the store categories, products, brands add cart and payment.
+2. ADMIN:  Manage & Control the entire store components.
+```
+### Demo
+This application is deployed on Heroku. Please check it out :smile: [here](link).
+
+### Wire-frame
+![Wireframe](./img/Wireframe-Project3.jpeg)
+
 
 ### Run the application for development
 ```
