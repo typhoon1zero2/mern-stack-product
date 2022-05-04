@@ -10,7 +10,7 @@ This means we would be using Node, Express and MongoDB to design the REST APIs a
 ### Website Details 
 ```js
 This products website is a continuation from ProductsApp (project #2): 
-So, the features we would be having in the application that we would be building are:
+So, the features I would be having in the application that would be building are:
   * Node provides the backend environment for this application
   * Authentication using JSON Web Tokens (JWT).
   * Option to add, edit, view and delete all the items in our store.
@@ -29,6 +29,10 @@ Users & Admins Control:
 ```
 ### Demo
 This application is deployed on Heroku. Please check it out :smile: [here](link).
+
+![LoginDemo](./img/loginPage.png)
+![RegisterDemo](./img/registerPage.png)
+
 
 ### Wire-frame
 ![Wireframe](./img/Wireframe-Project3.jpeg)
