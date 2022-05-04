@@ -26,7 +26,7 @@ function DetailProduct() {
   return (
     <>
         <div className="detail">
-            <img src={detailProduct.images} alt="" />
+            <img src={detailProduct.images.url} alt="" />
             <div className="box-detail">
                 <div className="row">
                     <h2>{detailProduct.title}</h2>
@@ -38,7 +38,7 @@ function DetailProduct() {
                 <p>Sold: {detailProduct.sold}</p>
                 <Link to="/cart" className="cart"
                 onClick={() => addCart(detailProduct)}>
-                    Buy Now
+                    Add to Cart
                 </Link>
             </div>
         </div>

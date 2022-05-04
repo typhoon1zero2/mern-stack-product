@@ -41,6 +41,27 @@ router.post("/upload", (req, res) => {
   }
 });
 
+// Delete image only admin can use
+router.post('/delete', (req, res) =>{
+    try {
+        const {public_id} = req.body;
+        if(!public_id) return res.status(200).json({ msg: 'No images Selected' });
+
+        cloudinary.v2.uploader.delete(public_id, async(err, result) =>{
+            if(err) throw err;
+
+            res.json({ msg: "Deleted Image" })
+        })
+
+    
+
+    } catch (err) {
+        return res.status(400).json({ msg: err.message })
+    }
+    
+})
+
+
 /* The fs.unlink() method is used to remove a file or symbolic link from the filesystem. This function does not work on directories, therefore it is recommended to use fs.rmdir() to remove a directory.*/
 
 const removeTmp = (path) => {

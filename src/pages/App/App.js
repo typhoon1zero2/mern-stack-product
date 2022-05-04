@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { DataProvider } from "../../GlobalState";
 import Header from "../../components/Headers/header";
 //import MainPages from "../../components/MainPages/Pages.js";
@@ -14,7 +14,7 @@ import Carousel from "../../components/ProductCarousel/productCarousel";
 import AboutUs from "../../components/MainPages/AboutUs/aboutUs";
 import OrderHistory from "../../components/MainPages/history/OrderHistory";
 import OrderDetails from "../../components/MainPages/history/OrderDetail";
-import { GlobalState } from "../../GlobalState";
+// import { GlobalState } from "../../GlobalState";
 import Categories from "../../components/MainPages/categories/categories";
 import CreateProduct from "../../components/MainPages/createProduct/createProduct";
 

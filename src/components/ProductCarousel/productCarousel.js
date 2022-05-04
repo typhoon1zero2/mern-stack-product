@@ -22,25 +22,25 @@ export default function productCarousel() {
           >
                <div className="slide-holder">
               <img
-                alt=""
-                src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-bagatelle-monogram-empreinte-leather-handbags--M46099_PM1_Back%20view.png?wid=456&hei=456"
+                alt="Liam Sticker"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651589927/test/j9cxdisnsbvmmuxlfxiw.jpg"
               />
               <div className="text-container">
-                <h2>bagatelle</h2>
+                <h2>Spider-Man</h2>
                 <p>
-                To start the season on a fresh note, the Maison introduces the Bagatelle, a feminine, mini hobo style in Monogram Empreinte leather.
+                    Liam Super Hero
                 </p>
               </div>
             </div>
             <div className="slide-holder">
               <img
-                alt=""
-                src="https://img.stadiumgoods.com/18/37/74/50/18377450_39279086_2048.jpg"
+                alt="Cleats"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651590473/test/wrwaws9xivp69ectolin.webp"
               />
               <div className="text-container">
-                <h2>foam rnnr</h2>
+                <h2>Soccer Cleat</h2>
                 <p>
-                "Slip into something different with the sleek Yeezy Slide and bold Foam Runner by Kanye West and the innovative minds at adidas. Shop the latest Yeezy Slide and Foam Runner releases of the year."
+                Cleat
                 </p>
               </div>
             </div>

@@ -14,7 +14,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
   // const [isLogged] = state.UserApi.isLogged
   // const [isAdmin] = state.UserApi.isAdmin
   const [cart] = state.UserApi.cart;
-  // const [menu, setMenu] = useState(false)
+   const [menu, setMenu] = useState(false)
 
   function LogoutBtn() {
     logout();
@@ -23,19 +23,25 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
   }
 
   let test = user;
-
-
+  const styleMenu = {
+    left: menu ? 0 : "-100%"
+}
   return (
     <header>
+      <h1>
+        <Link to="/">
+          <em>ty</em>Phoong Store
+        </Link>
+      </h1>
       {user ? (
-        <>
-          <button className="logoutButton" onClick={LogoutBtn}>
-        <AiOutlineLogout />
-        LOG OUT
-      </button>
+        <div>
           <span>{`Welcome, ${user.name}!`}</span>
-        
-        </>
+          <br />
+          <button className="logoutButton" onClick={LogoutBtn}>
+            <AiOutlineLogout />
+            LOG OUT
+          </button>
+        </div>
       ) : (
         <button
           className="loginButton"
@@ -50,31 +56,37 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
         if (user != null) {
           if (user.name === "admin") {
             return (
-              <p>
-                <Link to="/create_product"> Create Product</Link>
-                <Link to="/history">History</Link>
-              </p>
+              <div>
+                <button>
+                  <Link to="/create_product"> Create Product</Link>
+                </button>
+                <br />
+                <button>
+                  <Link to="/edit_product/id"> Edit Product</Link>
+                </button>
+                <br />
+                <button>
+                  <Link to="/category">Create Category</Link>
+                </button>
+              </div>
             );
           }
         } else {
         }
       })()}
-      <div className="menu">
-        <img src={Menu} alt="" width="30" />
-      </div>
-      <div className="logo">
-        <h1>
-          <Link to="/">
-            <em>ty</em>Phoong Store
-          </Link>
-        </h1>
-      </div>
+      <div className="menu" onClick={() => setMenu(!menu)}>
+                <img src={Menu} alt="" width="30" />
+            </div>
+      <div className="logo"></div>
 
       <ul>
         <li>
-          <Link to="/">Shop</Link>
+          <Link to="/">Shop Now</Link>
         </li>
-       
+        <li>
+          <Link to="/history">View History</Link>
+        </li>
+
         <li>
           <Link to="/about">About Us</Link>
         </li>
@@ -83,9 +95,9 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
           Login  <IoMdCreate style={{ marginRight: "5px" }} />
           Signup</Link>
         </li> */}
-        <li>
-          <img src={Close} alt="" width="30" className="menu" />
-        </li>
+         <li onClick={() => setMenu(!menu)}>
+                    <img src={Close} alt="" width="30" className="menu" />
+                </li>
       </ul>
       <div className="cart-icon">
         <span>{cart.length}</span>
@@ -94,7 +106,6 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
           <img src={Cart} alt="" width="30" />
         </Link>
       </div>
-      
     </header>
   );
 }

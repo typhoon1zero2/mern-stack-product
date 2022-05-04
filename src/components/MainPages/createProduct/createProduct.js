@@ -51,7 +51,7 @@ function CreateProduct() {
     const handleUpload = async e =>{
         e.preventDefault()
         try {
-            //if(!isAdmin) return alert("You're not an admin")
+            if(!isAdmin) return alert("You're not an admin")
             const file = e.target.files[0]
             
             if(!file) return alert("File not exist.")

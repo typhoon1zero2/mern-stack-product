@@ -1,4 +1,3 @@
-import { getSuggestedQuery } from '@testing-library/react'
 import * as usersAPI from './users-api'
 
 
