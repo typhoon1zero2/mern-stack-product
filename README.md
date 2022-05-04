@@ -56,4 +56,4 @@ $ npm run start:dev - http://localhost:3000/
 - [VSCODE](https://code.visualstudio.com/) - [cloudinary](https://cloudinary.com//)
 
 ### Back-end & Front-end (MERN DIAGRAM)
-![MERN DIAGRAM](./img/)
+![MERN DIAGRAM](./img/diagamdraw.png)
