@@ -30,7 +30,7 @@ Users & Admins Control:
 ```
 ### Demo
 - This application is deployed on Heroku. Please check it out :smile: [here](link).
-- Please check it out my Video :love:: [Youtube-Live-Demo](https://youtu.be/dX3sfDaacyw).
+- Please check it out my youtube live-demo:  [Youtube-Live-Demo](https://youtu.be/dX3sfDaacyw).
 
 
 ![LoginDemo](./img/login.png)
