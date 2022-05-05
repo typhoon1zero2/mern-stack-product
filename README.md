@@ -27,8 +27,8 @@ So, the features I would be having in the application that would be building are
   * Using Cloudinary API & URL to upload images
   
 Users & Admins Control:
-1. USER:  browse the store categories, products, brands add cart and payment.
-2. ADMIN:  Manage & Control the entire store components.
+1. USER:  browse the auto website:  categories, inventories, car model:  (cart and payment).
+2. ADMIN:  Manage & Control the entire website components.
 ```
 ### Demo
 - This application is deployed on Heroku. Please check it out :smile: [here](link).
