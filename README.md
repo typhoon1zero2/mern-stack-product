@@ -30,12 +30,12 @@ Users & Admins Control:
 ### Demo
 This application is deployed on Heroku. Please check it out :smile: [here](link).
 
-![LoginDemo](./img/loginPage.png)
-![RegisterDemo](./img/registerPage.png)
+![LoginDemo](./img/login.png)
+![RegisterDemo](./img/signup.png)
 
 
 ### Wire-frame
-![Wireframe](./img/Wireframe-Project3.jpeg)
+![Wireframe](./img/ERD.png)
 
 
 ### Run the application for development
