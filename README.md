@@ -29,8 +29,8 @@ Users & Admins Control:
 2. ADMIN:  Manage & Control the entire store components.
 ```
 ### Demo
-This application is deployed on Heroku. Please check it out :smile: [here](link).
-View Demo On Youtube : [Youtube-Live-Demo](https://youtu.be/dX3sfDaacyw).
+- This application is deployed on Heroku. Please check it out :smile: [here](link).
+- Please check it out my Video :love:: [Youtube-Live-Demo](https://youtu.be/dX3sfDaacyw).
 
 
 ![LoginDemo](./img/login.png)
