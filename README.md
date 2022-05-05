@@ -4,7 +4,8 @@
 
 ```js
 I'm using Full Stack JavaScript to design and develop an applications. 
-This means I would be using Node, Express and MongoDB to design the REST APIs and then we would use those APIs in React frontend.
+This means I would be using Node, Express and MongoDB to design the REST APIs.
+Then use those APIs in React frontend.
 ```
 
 ### Website Details 
@@ -21,7 +22,7 @@ So, the features I would be having in the application that would be building are
   * Adding Shopping Cart
   * Handle Checkout & Payments
   * Deployment heroku
-  * Using Cloudinary API & url to upload images
+  * Using Cloudinary API & URL to upload images
   
 Users & Admins Control:
 1. USER:  browse the store categories, products, brands add cart and payment.
@@ -29,6 +30,8 @@ Users & Admins Control:
 ```
 ### Demo
 This application is deployed on Heroku. Please check it out :smile: [here](link).
+View Demo On Youtube : [Youtube-Live-Demo](https://youtu.be/dX3sfDaacyw).
+
 
 ![LoginDemo](./img/login.png)
 ![RegisterDemo](./img/signup.png)
