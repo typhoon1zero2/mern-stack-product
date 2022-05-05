@@ -12,7 +12,7 @@ Then use those APIs in React frontend.
 
 ### Website Details 
 
-:jp: :japan: Auto Import :car: :blue_car: website is one of our business model
+:jp: :japan: Classic Auto Import :car: :blue_car: website is one of our business model
 ``` 
 But, also continuation from my idea ProductsApp (project #2)
 So, the features I would be having in the application that would be building are:
@@ -36,11 +36,12 @@ Users & Admins Control:
 - This application is deployed on Heroku. Please check it out :smile: [here](link).
 - Please check it out my youtube live-demo:  [Youtube-Live-Demo](https://youtu.be/dX3sfDaacyw).
 
-
+<hr />
 ![LoginDemo](./img/login.png)
+<hr />
 ![RegisterDemo](./img/signup.png)
 
-
+<hr />
 ### Wire-frame
 ![Wireframe](./img/ERD.png)
 
