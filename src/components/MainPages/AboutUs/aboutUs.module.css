@@ -6,6 +6,31 @@
 .title {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 2rem;
+}
+.h3font{
+  color: #81c94c;
+
+}
+.first{
+  color: rgb(67, 16, 233);
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.second {
+  color: rgb(224, 107, 30);
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.third {
+  color: rgb(49, 73, 223);
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.typhoon{
+  color: rgb(9, 1, 1);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgb(198, 174, 211);
+  background: linear-gradient(0deg, rgb(5, 227, 94) 0%, rgb(174, 196, 219) 100%);
 }

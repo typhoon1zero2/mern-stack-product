@@ -1,15 +1,15 @@
-## `A Single-Page-Application(SPA) - MERN((MongoDB, Express, React and Node)) Full Stack .`
+## `A Single-Page-Application(SPA) - MERN(MongoDB, Express, React and Node) Full Stack .`
 
 ### DESCRIPTION
 
 ```js
-I'm are using Full Stack JavaScript to design and develop an applications. 
+I'm using Full Stack JavaScript to design and develop an applications. 
 This means I would be using Node, Express and MongoDB to design the REST APIs and then we would use those APIs in React frontend.
 ```
 
 ### Website Details 
 ```js
-This products website is a continuation from ProductsApp (project #2): 
+Japanese Auto Import website is a continuation from ProductsApp (project #2): 
 So, the features I would be having in the application that would be building are:
   * Node provides the backend environment for this application
   * Authentication using JSON Web Tokens (JWT).

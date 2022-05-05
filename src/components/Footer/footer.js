@@ -15,9 +15,9 @@ export default function Footer(props) {
               fontSize: "2em",
             }}
           >
-           <em>ty</em>PHOONG
+           <em>Japanese</em> Classic Cars
           </h3>
-          <p className="phong">Product Store is a registered company under typhoong Ltd.</p>
+          <p className="phong">Japanese Classic Cars is a registered company under typhoong LLC.</p>
           <br />
           <div className="sub">
             <div>

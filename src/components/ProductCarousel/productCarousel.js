@@ -22,38 +22,36 @@ export default function productCarousel() {
           >
                <div className="slide-holder">
               <img
-                alt="Liam Sticker"
-                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651589927/test/j9cxdisnsbvmmuxlfxiw.jpg"
+                alt="TOYOTA ALTEZZA"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651767212/test/izouvuipzaslwjyynant.png"
               />
               <div className="text-container">
-                <h2>Spider-Man</h2>
+                <h2>TOYOTA ALTEZZA</h2>
                 <p>
-                    Liam Super Hero
+                RS200 Z Edition RS200 Z Edition External Front and Rear Bumper Veilside External Muffler FR BLTZ External Radiator External Radiator WORK18 Aluminum External Bonnet External Clutch Full Bucket BRIDE
                 </p>
               </div>
             </div>
             <div className="slide-holder">
               <img
-                alt="MacBook Pro"
-                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651697399/test/ribg24eljrlrxs33xslj.png"
+                alt="NISSAN DATSUN PICKUP"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651767684/test/oihmvum900vgtpq6z65b.png"
               />
               <div className="text-container">
-                <h2>MacBook Pro</h2>
+                <h2>NISSAN DATSUN PICKUP</h2>
                 <p>
-                    Apple M1 Pro or M1 Max chip for a massive leap in CPU, GPU, and machine learning performance
-                </p>
+                Double cab AD NEW All paint External aluminum block tire External aluminum External tail lens Over fender External muffler                </p>
               </div>
             </div>
             <div className="slide-holder">
               <img
-                alt="KID GUCCI SHIRT"
-                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651697821/test/etr0g3efafmjk6hqugfr.png"
+                alt="LAND CRUISER PRADO"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651767954/test/q4u3sundccrclxmdjwnu.png"
               />
               <div className="text-container">
-                <h2>KID GUCCI SHIRT</h2>
+                <h2>LAND CRUISER PRADO</h2>
                 <p>
-                    Gucci Shirt for kids
-                </p>
+                EX Wide Lift Up External Aluminum Sunroof External Tail Lens Clear Lens Seat Cover Wood Handle                </p>
               </div>
             </div>
             <div className="slide-holder">
@@ -62,22 +60,20 @@ export default function productCarousel() {
                 src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651697727/test/weezxyuw8gnhhnsyhkzh.png"
               />
               <div className="text-container">
-                <h2>freak 3 se</h2>
+                <h2>TOYOTA SUPRA - NATURALLY ASPIRATED - 3RD GEN (A70)</h2>
                 <p>
-                Your little baller can dream about playing like their favorite star with the Freak 3.
-                </p>
+                The 4th generation Toyota Supra base model was powered by, in most applications, the 3.0-liter 7M-GE dual overhead cam inline six producing 200 horsepower. In Japan, a smaller 2.0-liter six was available to avoid road taxes on larger-displacement engines. Both five-speed manual and four-speed automatic transmissions were available between 1986 and 1989.                </p>
               </div>
             </div>
             <div className="slide-holder">
               <img
-                alt=""
-                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/3d901888-7ba2-45e8-91a6-5ceeed77a0e9/boston-celtics-statement-edition-jordan-dri-fit-adv-nba-authentic-jersey-sfNVW5.png"
+                alt="FAIRLADY Z 2+2 TWIN TURBO Z32"
+                src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651768652/test/by4bcoe40ooueg2gsx0c.png"
               />
               <div className="text-container">
-                <h2>GUCCI SHIRT</h2>
+                <h2>FAIRLADY Z 2+2 TWIN TURBO Z32</h2>
                 <p>
-                  The Boston Celtics Statement Edition sets the tone for big games and rivalries, when players want to make a bold impression.
-                </p>
+                A more angular design, with partially-hidden retractable headlamps, greeted sports car and luxury GT fans alike. The 1984 model year wore both Datsun and Nissan badges on the decklid, as Nissan was transitioning away from the older Datsun brand name.                </p>
               </div>
             </div>
             <div className="slide-holder">

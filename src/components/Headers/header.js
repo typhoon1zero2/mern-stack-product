@@ -30,7 +30,8 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
     <header>
       <h1>
         <Link to="/">
-          <em>ty</em>Phoong Store
+          <em>Japanese</em> 
+          <div>Classic Cars</div>
         </Link>
       </h1>
       {user ? (
@@ -58,15 +59,15 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
             return (
               <div>
                 <button>
-                  <Link to="/create_product"> Create Product</Link>
+                  <Link to="/create_product">Create Inventory</Link>
                 </button>
                 <br />
                 <button>
-                  <Link to="/edit_product/id"> Edit Product</Link>
+                  <Link to="/edit_product/id"> Edit Inventory</Link>
                 </button>
                 <br />
                 <button>
-                  <Link to="/category">Create Category</Link>
+                  <Link to="/category">Create Inventory</Link>
                 </button>
               </div>
             );
@@ -81,7 +82,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
 
       <ul>
         <li>
-          <Link to="/">Shop Now</Link>
+          <Link to="/">View Inventory</Link>
         </li>
         <li>
           <Link to="/history">View History</Link>
