@@ -12,7 +12,8 @@ Then use those APIs in React frontend.
 
 ### Website Details 
 ```js
-Japanese Auto Import website is a continuation from ProductsApp (project #2): 
+Japanese Auto Import website is one of our business model: 
+But, also continuation from my idea ProductsApp (project #2): 
 So, the features I would be having in the application that would be building are:
   * Node provides the backend environment for this application
   * Authentication using JSON Web Tokens (JWT).
