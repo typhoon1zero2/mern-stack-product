@@ -36,12 +36,11 @@ Users & Admins Control:
 - This application is deployed on Heroku. Please check it out :smile: [here](link).
 - Please check it out my youtube live-demo:  [Youtube-Live-Demo](https://youtu.be/dX3sfDaacyw).
 
-<hr />
+
 ![LoginDemo](./img/login.png)
-<hr />
 ![RegisterDemo](./img/signup.png)
 
-<hr />
+
 ### Wire-frame
 ![Wireframe](./img/ERD.png)
 
