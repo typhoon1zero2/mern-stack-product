@@ -12,7 +12,7 @@ Then use those APIs in React frontend.
 
 ### Website Details 
 ```js
-Japanese Auto Import :car: <br /> :red_car: website is one of our business model: 
+Japanese Auto Import :japanese_ogre: website is one of our business model: 
 But, also continuation from my idea ProductsApp (project #2): 
 So, the features I would be having in the application that would be building are:
   * Node provides the backend environment for this application
