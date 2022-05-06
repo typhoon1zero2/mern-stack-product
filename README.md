@@ -60,12 +60,12 @@ $ npm run start:dev - http://localhost:3000/
 
 ### Languages & Technologies 
 
-- [Node](https://nodejs.org/en/)            [Express](https://expressjs.com/)
-- [Mongoose](https://mongoosejs.com/)       [React](https://reactjs.org/)
-- [HTML](https://html.com/)                 [CSS](https://www.w3schools.com/Css/) 
-- [JWT USER AUTH](https://jwt.io/)          [JS](https://www.w3schools.com/js/default.asp) 
-- [Heroku](https://id.heroku.com/login)     [Postman](https://www.postman.com/)
-- [VSCODE](https://code.visualstudio.com/)  [cloudinary](https://cloudinary.com//)
+- [Node](https://nodejs.org/en/) :left_right_arrow: [Express](https://expressjs.com/)
+- [Mongoose](https://mongoosejs.com/) :left_right_arrow:  [React](https://reactjs.org/)
+- [HTML](https://html.com/) :left_right_arrow:   [CSS](https://www.w3schools.com/Css/) 
+- [JWT USER AUTH](https://jwt.io/) :left_right_arrow:  [JS](https://www.w3schools.com/js/default.asp) 
+- [Heroku](https://id.heroku.com/login) :left_right_arrow:[Postman](https://www.postman.com/)
+- [VSCODE](https://code.visualstudio.com/):left_right_arrow: [cloudinary](https://cloudinary.com//)
 
 ### Technical Challenges:
 
