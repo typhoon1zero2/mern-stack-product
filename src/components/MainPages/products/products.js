@@ -6,7 +6,7 @@ import axios from "axios";
 import Filters from "./Filter";
 import LoadMore from "./LoadMore";
 
-function Products() {
+export default function Products() {
   const state = useContext(GlobalState);
  
 
@@ -101,4 +101,4 @@ function Products() {
   );
 }
 
-export default Products;
+

@@ -36,7 +36,26 @@ header button:hover {
     rgb(174, 196, 219) 100%
   );
 }
+.loginUser{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    /* left: 0; */
+    height: 8%;
+}
+.logoutButton {
+    border: solid 1px white;
+    width: 100px;
+    text-align: center;
+    padding: 1px;
+    border-radius: 25px;
+    cursor: pointer;
 
+    
+  }
 .loginButton {
   color: blue;
   box-shadow: 2px 1px;
@@ -89,30 +108,32 @@ header ul li:hover {
   -o-border-radius: 20px;
 }
 .topLogo {
-    font-size: 2rem;
-    margin-top: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(39, 22, 22);
-    text-align: center;
-    width: 100%;
-    border: solid white 1.5px;
-    background-color:rgb(250, 252, 251);
-    border-radius: 20px;
-    height: 50px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+  font-family: fantasy;
+  font-size: 3rem;
+  margin-top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(39, 22, 22);
+  text-align: center;
+  width: 100%;
+  border: solid white 1.5px;
+  background-color: rgb(250, 252, 251);
+  border-radius: 20px;
+  height: 50px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
-  
+
 .phong-logo {
-margin-top: 13px;
+  filter: drop-shadow(0 0 1rem rgb(185, 200, 230));
+  margin-top: 13px;
   cursor: pointer;
   border-radius: 60px;
   border: solid rgb(15, 16, 15) 1px;
-  width: 100px;
+  width: 120px;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
   -ms-border-radius: 60px;
@@ -120,6 +141,6 @@ margin-top: 13px;
 }
 
 .phong-logo:hover {
-  filter: drop-shadow(0 0 1rem rgb(242, 8, 8));
-  -webkit-filter: drop-shadow(0 0 1rem rgb(242, 8, 8));
+  filter: drop-shadow(0 0 1rem rgb(37, 100, 227));
+  -webkit-filter: drop-shadow(0 0 1rem rgb(37, 100, 227));
 }
