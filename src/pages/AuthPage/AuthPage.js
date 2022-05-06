@@ -15,6 +15,8 @@ export default function AuthPage({ setUser, showLogin, setShowLogin }) {
       ) : (
         <SignUpForm setUser={setUser} />
       )}
+       
     </main>
+    
   );
 }

@@ -67,4 +67,8 @@ $ npm run start:dev - http://localhost:3000/
 - [Heroku](https://id.heroku.com/login) - [Postman](https://www.postman.com/)
 - [VSCODE](https://code.visualstudio.com/) - [cloudinary](https://cloudinary.com//)
 
-
+### Technical Challenges:
+- User Authentication
+- Handle Checkout & Payments
+- Upload picture from cloudinary from Front-end
+- Getting data to Front-end

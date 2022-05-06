@@ -14,7 +14,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
   // const [isLogged] = state.UserApi.isLogged
   // const [isAdmin] = state.UserApi.isAdmin
   const [cart] = state.UserApi.cart;
-   const [menu, setMenu] = useState(false)
+  const [menu, setMenu] = useState(false);
 
   function LogoutBtn() {
     logout();
@@ -24,13 +24,25 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
 
   let test = user;
   const styleMenu = {
-    left: menu ? 0 : "-100%"
-}
+    left: menu ? 0 : "-100%",
+  };
   return (
     <header>
+      <div>
+        <a
+          href={"https://www.linkedin.com/in/phong-nguyen-b9520b22b/"}
+          target="_blank"
+        >
+          <img
+            className="phong-logo"
+            src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651854823/test/fuzdus6v8g6ngabbs9cc.jpg"
+            alt="Phong"
+          />
+        </a>
+      </div>
       <h1>
         <Link to="/">
-          <em>Japanese</em> 
+          <em>Japanese</em>
           <div>Classic Cars</div>
         </Link>
       </h1>
@@ -76,8 +88,8 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
         }
       })()}
       <div className="menu" onClick={() => setMenu(!menu)}>
-                <img src={Menu} alt="" width="30" />
-            </div>
+        <img src={Menu} alt="" width="30" />
+      </div>
       <div className="logo"></div>
 
       <ul>
@@ -96,9 +108,9 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
           Login  <IoMdCreate style={{ marginRight: "5px" }} />
           Signup</Link>
         </li> */}
-         <li onClick={() => setMenu(!menu)}>
-                    <img src={Close} alt="" width="30" className="menu" />
-                </li>
+        <li onClick={() => setMenu(!menu)}>
+          <img src={Close} alt="" width="30" className="menu" />
+        </li>
       </ul>
       <div className="cart-icon">
         <span>{cart.length}</span>
