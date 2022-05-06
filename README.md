@@ -37,8 +37,8 @@ Users & Admins Control:
 - Please check it out my youtube live-demo:  [Youtube-Live-Demo](https://youtu.be/dX3sfDaacyw).
 
 
-![LoginDemo](./img/login.png)
-![RegisterDemo](./img/signup.png)
+![LoginDemo](./img/loginPage.png)
+![RegisterDemo](./img/signupPage.png)
 
 
 ### Wire-frame
@@ -64,8 +64,8 @@ $ npm run start:dev - http://localhost:3000/
 - [Mongoose](https://mongoosejs.com/) :left_right_arrow:  [React](https://reactjs.org/)
 - [HTML](https://html.com/) :left_right_arrow:   [CSS](https://www.w3schools.com/Css/) 
 - [JWT USER AUTH](https://jwt.io/) :left_right_arrow:  [JS](https://www.w3schools.com/js/default.asp) 
-- [Heroku](https://id.heroku.com/login) :left_right_arrow:[Postman](https://www.postman.com/)
-- [VSCODE](https://code.visualstudio.com/):left_right_arrow: [cloudinary](https://cloudinary.com//)
+- [Heroku](https://id.heroku.com/login) :left_right_arrow: [Postman](https://www.postman.com/)
+- [VSCODE](https://code.visualstudio.com/) :left_right_arrow: [cloudinary](https://cloudinary.com//)
 
 ### Technical Challenges:
 
