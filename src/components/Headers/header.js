@@ -40,12 +40,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
           />
         </a>
       </div>
-      <h1>
-        <Link to="/">
-          <em>Japanese</em>
-          <div>Classic Cars</div>
-        </Link>
-      </h1>
+      <div className="topLogo">Japanese Classic Cars Import</div>
       {user ? (
         <div>
           <span>{`Welcome, ${user.name}!`}</span>
