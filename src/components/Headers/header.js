@@ -31,12 +31,12 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
       <div>
         <a
           href={"https://www.linkedin.com/in/phong-nguyen-b9520b22b/"}
-          target="_blank"
+          target=""
         >
           <img
             className="phong-logo"
             src="https://res.cloudinary.com/deeztyphoon0529/image/upload/v1651854823/test/fuzdus6v8g6ngabbs9cc.jpg"
-            alt="Phong"
+            alt="Phong-Logo"
           />
         </a>
       </div>
