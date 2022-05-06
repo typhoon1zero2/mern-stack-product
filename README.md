@@ -60,15 +60,18 @@ $ npm run start:dev - http://localhost:3000/
 
 ### Languages & Technologies 
 
-- [Node](https://nodejs.org/en/) - [Express](https://expressjs.com/)
-- [Mongoose](https://mongoosejs.com/) - [React](https://reactjs.org/)
-- [HTML](https://html.com/) - [CSS](https://www.w3schools.com/Css/) 
-- [JS](https://www.w3schools.com/js/default.asp) - [JWT USER AUTH](https://jwt.io/) 
-- [Heroku](https://id.heroku.com/login) - [Postman](https://www.postman.com/)
-- [VSCODE](https://code.visualstudio.com/) - [cloudinary](https://cloudinary.com//)
+- [Node](https://nodejs.org/en/)            [Express](https://expressjs.com/)
+- [Mongoose](https://mongoosejs.com/)       [React](https://reactjs.org/)
+- [HTML](https://html.com/)                 [CSS](https://www.w3schools.com/Css/) 
+- [JWT USER AUTH](https://jwt.io/)          [JS](https://www.w3schools.com/js/default.asp) 
+- [Heroku](https://id.heroku.com/login)     [Postman](https://www.postman.com/)
+- [VSCODE](https://code.visualstudio.com/)  [cloudinary](https://cloudinary.com//)
 
 ### Technical Challenges:
+
+```
 - User Authentication
 - Handle Checkout & Payments
 - Upload picture from cloudinary from Front-end
 - Getting data to Front-end
+```
