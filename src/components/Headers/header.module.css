@@ -36,23 +36,15 @@ header button:hover {
     rgb(174, 196, 219) 100%
   );
 }
-.loginUser{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* position: absolute; */
-    /* left: 0; */
-    height: 8%;
-}
+
 .logoutButton {
-    border: solid 1px white;
+    border: solid 4px white;
     width: 100px;
     text-align: center;
     padding: 1px;
     border-radius: 25px;
     cursor: pointer;
+    background-color: rgb(5, 0, 0);
 
     
   }
