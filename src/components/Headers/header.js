@@ -4,7 +4,7 @@ import Menu from "../Headers/icons/menu.svg";
 import Close from "../Headers/icons/close.svg";
 import Cart from "../Headers/icons/cart.svg";
 import { Link } from "react-router-dom";
-import { AiOutlineLogout, AiOutlineLogin } from "react-icons/ai";
+// import { AiOutlineLogout, AiOutlineLogin } from "react-icons/ai";
 
 import { logout } from "../../components/MainPages/utilities/users-service";
 
@@ -44,7 +44,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
           <span>{`Welcome, ${user.name}!`}</span>
           <br />
           <button className="logoutButton" onClick={LogoutBtn}>
-            <AiOutlineLogout />
+            {/* <AiOutlineLogout /> */}
             LOG OUT
           </button>
         </div>
@@ -53,7 +53,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
           className="loginButton"
           onClick={() => setShowLogin(!showLogin)}
         >
-          <AiOutlineLogin />
+          {/* <AiOutlineLogin /> */}
           {showLogin ? "LOGIN" : "REGISTER"}
         </button>
       )}
