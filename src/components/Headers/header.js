@@ -72,7 +72,7 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
                 </button>
                 <br />
                 <button>
-                  <Link to="/category">Create Inventory</Link>
+                  <Link to="/category">Create Category</Link>
                 </button>
               </div>
             );
