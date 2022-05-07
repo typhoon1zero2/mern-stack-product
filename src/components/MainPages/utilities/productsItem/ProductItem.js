@@ -1,5 +1,5 @@
 import React from "react";
-import BtnRender from "../../utilities/productsItem/BtnRender";
+import BtnRender from "../../utilities/productsItem/btnRender";
 
 function ProductItem({ product, isAdmin, deleteProduct, handleCheck  }) {
   return (
