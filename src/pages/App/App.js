@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { DataProvider } from "../../GlobalState";
 import Header from "../../components/Headers/header";
-//import MainPages from "../../components/MainPages/Pages.js";
 import { Routes, Route } from "react-router-dom";
 import AuthPage from "../../pages/AuthPage/AuthPage";
 import { getUser } from "../../components/MainPages/utilities/users-service";
@@ -14,7 +13,6 @@ import Carousel from "../../components/ProductCarousel/productCarousel";
 import AboutUs from "../../components/MainPages/AboutUs/aboutUs";
 import OrderHistory from "../../components/MainPages/history/OrderHistory";
 import OrderDetails from "../../components/MainPages/history/OrderDetail";
-// import { GlobalState } from "../../GlobalState";
 import Categories from "../../components/MainPages/categories/categories";
 import CreateProduct from "../../components/MainPages/createProduct/createProduct";
 
@@ -22,9 +20,7 @@ export default function App() {
   const [user, setUser] = useState(getUser());
   const [toggle, setToggle] = useState(true);
   const [showLogin, setShowLogin] = useState(true);
-  // const state = useContext(GlobalState);
-  // const [isLogged] = state.UserApi.isLogged;
-  // const [isAdmin] = state.UserApi.isAdmin;
+  
 
   useEffect(() => {
     (async () => {
