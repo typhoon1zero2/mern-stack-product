@@ -33,7 +33,7 @@ Users & Admins Control:
 2. ADMIN:  Manage & Control the entire website components.
 ```
 ### Demo
-- This application is deployed on Heroku. Please check it out :smile: [here](link).
+- This application is deployed on Heroku. Please check it out :smile: [here](https://jpclassicimport.herokuapp.com/).
 - Please check it out my youtube live-demo:  [Youtube-Live-Demo](https://youtu.be/dX3sfDaacyw).
 
 
