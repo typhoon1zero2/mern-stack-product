@@ -1,8 +1,8 @@
-import {
-  AiTwotoneMail,
-  AiOutlineLinkedin,
-  AiOutlineGithub,
-} from "react-icons/ai";
+// import {
+//   AiTwotoneMail,
+//   AiOutlineLinkedin,
+//   AiOutlineGithub,
+// } from "react-icons/ai";
 
 export default function Footer(props) {
   return (
@@ -48,7 +48,7 @@ export default function Footer(props) {
                   <h2>
                     {" "}
                     <a href="https://github.com/typhoon1zero2">
-                      <AiOutlineGithub />
+                      github
                     </a>
                   </h2>
                
@@ -59,7 +59,7 @@ export default function Footer(props) {
                       class="link-secondary"
                       href="mailto:ptnguyen617@yahoo.com"
                     >
-                      <AiTwotoneMail />
+                      mailto
                     </a>
                   </h2>
                
@@ -69,7 +69,7 @@ export default function Footer(props) {
                       class="link-secondary"
                       href="https://www.linkedin.com/in/phong-nguyen-b9520b22b/"
                     >
-                      <AiOutlineLinkedin />
+                     linkedin
                     </a>
                   </h2>
               
