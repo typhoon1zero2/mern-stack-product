@@ -19,10 +19,10 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
     setToggle(!toggle);
   }
 
-  let test = user;
-  const styleMenu = {
-    left: menu ? 0 : "-100%",
-  };
+  // let test = user;
+  // const styleMenu = {
+  //   left: menu ? 0 : "-100%",
+  // };
   return (
     <header>
       <div>
