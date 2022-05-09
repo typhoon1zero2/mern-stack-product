@@ -136,3 +136,33 @@ header ul li:hover {
   filter: drop-shadow(0 0 1rem rgb(37, 100, 227));
   -webkit-filter: drop-shadow(0 0 1rem rgb(37, 100, 227));
 }
+.admin1{
+  border: solid 4px white;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  padding: 1px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: rgb(3, 0, 10);
+}
+.admin2{
+  border: solid 4px white;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  padding: 1px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: rgb(3, 0, 10);
+}
+.admin3{
+  border: solid 4px white;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  padding: 1px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: rgb(3, 0, 10);
+}

@@ -63,15 +63,15 @@ function Header({ user, setUser, toggle, setToggle, showLogin, setShowLogin }) {
           if (user.name === "admin") {
             return (
               <div>
-                <button>
+                <button className="admin1">
                   <Link to="/create_product">Create Inventory</Link>
                 </button>
                 <br />
-                <button>
+                <button className="admin2">
                   <Link to="/edit_product/id"> Edit Inventory</Link>
                 </button>
                 <br />
-                <button>
+                <button className="admin3">
                   <Link to="/category">Create Category</Link>
                 </button>
               </div>
