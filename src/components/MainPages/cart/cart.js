@@ -99,14 +99,14 @@ return (
                         <p>{product.content}</p>
 
                         <div className="amount">
-                            <button onClick={() => decrement(product._id)}> -</button>
+                            <button onClick={() => decrement(product._id)}>-</button>
                             <span>{product.quantity}</span>
-                            <button onClick={() => increment(product._id)}>+ </button>
+                            <button onClick={() => increment(product._id)}>+</button>
                         </div>
                         
                         <div className="delete" 
                         onClick={() => removeProduct(product._id)}>
-                             {/* <RiDeleteBack2Fill /> */}
+                             X
                         </div>
                     </div>
                 </div>

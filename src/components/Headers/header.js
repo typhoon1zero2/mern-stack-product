@@ -4,7 +4,7 @@ import Menu from "../Headers/icons/menu.svg";
 import Close from "../Headers/icons/close.svg";
 import Cart from "../Headers/icons/cart.svg";
 import { Link } from "react-router-dom";
-// import { AiOutlineLogout, AiOutlineLogin } from "react-icons/ai";
+// import { AiOutlineLogout, AiOutlineLogin } from "react-icons/ai";- react-icon not working for heroku
 
 import { logout } from "../../components/MainPages/utilities/users-service";
 
