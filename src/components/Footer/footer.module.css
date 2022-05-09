@@ -1,40 +1,54 @@
 .footer {
-    position: relative;
-    margin: 0px;
-    background-color: #f5f5f5;
-    padding: 0px;
-  }
+  position: relative;
+  margin: 0px;
+  background-color: #f5f5f5;
+  padding: 0px;
+}
 
 .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-direction:column;
-    text-align: left;
-    margin: 10px;
-  }
-  .phong {
-    text-align: center;
-    
-  }
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px;
+}
+.phong {
+  text-align: center;
+}
+.contact {
+  text-align: center;
+  justify-content: space-evenly;
+  
+}
+.sub {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sub p {
+  margin: 5px;
+}
+.sub a {
+  margin: 40px;
+}
+.sub h2 {
+  font-size: x-large;
+}
+.linked {
+  width: 30px;
+  height: 30px;
+}
+.mail {
+  width: 30px;
+  height: 30px;
+}
+.github {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 720px) {
   .sub {
-    display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
   }
-  
-  .sub p {
-    margin: 5px;
-  }
-  .sub a {
-    margin: 40px;
-  }
-  .sub h2 {
-    font-size:x-large;
-  }
-  
-  
-  @media screen and (max-width: 720px) {
-    .sub {
-      flex-direction: column;
-    }
-  }
-  
+}
